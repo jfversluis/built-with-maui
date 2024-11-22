@@ -12,7 +12,7 @@ Underneath there is a list of apps that have been verified to be built with .NET
 Do you want to add your own? Please feel free to open a pull request!
 
 | App Name | Description | (Est.) No. Users/Downloads | More information |
-| -------- | ----------- | -------------------------- | ---------------- |
+| -------- | ----------- | -------------------------- |:----------------:|
 | **DigiD** | Dutch government authentication app for all government services. | ~14.6M (Adult Dutch citizens) | [<img src="assets/website.png"/>](https://www.digid.nl/en/login-methods/digid-app/) [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=nl.rijksoverheid.digid.pub&hl=en-US) [<img src="assets/ios.png"/>](https://apps.apple.com/gb/app/digid/id1208460960?l=en-US) |
 | **OVPay** | The OVPay app is used for public transportation payments in the Netherlands. | 100K+ downloads (Google Play) | [<img src="assets/website.png"/>](https://www.ovpay.nl/en) [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=nl.tls.ovpay&hl=en) [<img src="assets/ios.png"/>](https://apps.apple.com/nl/app/ovpay/id1542164084?l=en-US) |
 
