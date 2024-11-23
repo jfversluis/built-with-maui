@@ -30,6 +30,8 @@ Do you want to add your own? Please feel free to open a pull request!
 | **Tripsta** | Trip tracking app with statistics | 50+ (Google Play) | [<img src="assets/website.png"/>](https://tripsta.app/) [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=com.universley.tripsta&hl=en) [<img src="assets/ios.png"/>](https://apps.apple.com/us/app/tripsta/id6448712233?l=en-US) |
 | **TV Show & Movie Tracker -Trakt** | TV Show Tracker let you discover, track and comment your favorite TV shows & movies. | 100K+ (Google Play) | [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=com.jonathanantoine.TVST&hl=en) [<img src="assets/ios.png"/>](https://apps.apple.com/nl/app/tv-show-tracker-trakt-client/id1228141510?l=en-US) |
 | **UnityPay: Joint Expenses** | Expense Tracker for Couples | 100+ (Google Play) | [<img src="assets/website.png"/>](https://www.williambelle.co/apps/unity-pay) [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=co.williambelle.unitypay&hl=en&hl=en) [<img src="assets/ios.png"/>](https://apps.apple.com/us/app/tripsta/id6448712233?l=en-US) |
+| **Video Converter** | Video Converter with Advance Video Controls for iOS & macOS | 70K+ (App Store) | [<img src="assets/ios.png"/>](https://apps.apple.com/us/app/video-converter-mp4-to-audio/id1620778262) |
+| **Audio Converter** | Audio Converter with Advance Audio Controls for iOS & macOS | 50K+ (App Store) | [<img src="assets/ios.png"/>](https://apps.apple.com/us/app/audio-converter-mp3-extractor/id6446039142) |
 
 
 ## More links and resources:
