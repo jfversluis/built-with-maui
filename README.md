@@ -32,7 +32,7 @@ Do you want to add your own? Please feel free to open a pull request!
 | **Tripsta** | Trip tracking app with statistics | 50+ (Google Play) | [<img src="assets/website.png"/>](https://tripsta.app/) [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=com.universley.tripsta&hl=en) [<img src="assets/ios.png"/>](https://apps.apple.com/us/app/tripsta/id6448712233?l=en-US) |
 | **TV Show & Movie Tracker -Trakt** | TV Show Tracker let you discover, track and comment your favorite TV shows & movies. | 100K+ (Google Play) | [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=com.jonathanantoine.TVST&hl=en) [<img src="assets/ios.png"/>](https://apps.apple.com/nl/app/tv-show-tracker-trakt-client/id1228141510?l=en-US) |
 | **UnityPay: Joint Expenses** | Expense Tracker for Couples | 100+ (Google Play) | [<img src="assets/website.png"/>](https://www.williambelle.co/apps/unity-pay) [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=co.williambelle.unitypay&hl=en&hl=en) [<img src="assets/ios.png"/>](https://apps.apple.com/us/app/tripsta/id6448712233?l=en-US) |
-
+| **Colic Baby Sleeping Sounds** | End sleepless nights! Help your baby relax and fall into a peaceful sleep with Colic Baby Sleeping Sounds. | 10K+ downloads (Google Play) | [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=com.kodfab.bes&hl=en) |
 
 ## More links and resources:
 - [Official Microsoft customer showcases](https://dotnet.microsoft.com/platform/customers/maui)
