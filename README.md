@@ -43,7 +43,7 @@ Do you want to add your own? Please feel free to open a pull request!
 | **UnityPay: Joint Expenses** | Expense Tracker for Couples | 100+ (Google Play) | [<img src="assets/website.png"/>](https://www.williambelle.co/apps/unity-pay) [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=co.williambelle.unitypay&hl=en&hl=en) [<img src="assets/ios.png"/>](https://apps.apple.com/us/app/tripsta/id6448712233?l=en-US) |
 | **UWV** | Dutch social security and employment agency. | 100K+ (Google Play) 100K+ (App Store) | [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=nl.uwv.app&hl=nl) [<img src="assets/ios.png"/>](https://apps.apple.com/nl/app/uwv/id1478274972) |
 | **Video Converter** | Video Converter with Advance Video Controls for iOS & macOS | 70K+ (App Store) | [<img src="assets/ios.png"/>](https://apps.apple.com/us/app/video-converter-mp4-to-audio/id1620778262) |
-
+| **Longines Equestrian App** | The official Longines Equestrian App, the ultimate companion for equestrian enthusiasts and participants of events sponsored by Longines. | Unknown | [<img src="assets/website.png"/>]([https://public.hippodata.net) [<img src="assets/android.png"/>](https://play.google.com/store/apps/details?id=com.longines.equestrian) [<img src="assets/ios.png"/>](https://apps.apple.com/de/app/longines-equestrian-app/id1558577894) |
 
 ## More links and resources:
 - [Official Microsoft customer showcases](https://dotnet.microsoft.com/platform/customers/maui)
