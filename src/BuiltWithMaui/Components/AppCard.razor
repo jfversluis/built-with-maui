@@ -1,7 +1,7 @@
 @namespace BuiltWithMaui.Components
 @using BuiltWithMaui.Models
 
-<a href="app/@App.Slug" class="app-card">
+<button type="button" class="app-card" @onclick="OnOpen">
     <h3>
         @App.Name
         @if (App.Featured)
@@ -12,16 +12,7 @@
     <p class="desc">@App.Description</p>
     @if (!string.IsNullOrWhiteSpace(App.Author))
     {
-        <span class="author">
-            @if (!string.IsNullOrWhiteSpace(App.AuthorGitHub))
-            {
-                <a href="https://github.com/@App.AuthorGitHub" target="_blank" rel="noopener" @onclick:stopPropagation>👤 @App.Author</a>
-            }
-            else
-            {
-                <text>👤 @App.Author</text>
-            }
-        </span>
+        <span class="author">👤 @App.Author</span>
     }
     <div class="meta">
         <span class="users">@App.Users</span>
@@ -32,8 +23,9 @@
             }
         </span>
     </div>
-</a>
+</button>
 
 @code {
     [Parameter, EditorRequired] public AppEntry App { get; set; } = default!;
+    [Parameter] public EventCallback OnOpen { get; set; }
 }

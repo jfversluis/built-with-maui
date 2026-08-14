@@ -1,0 +1,91 @@
+@namespace BuiltWithMaui.Components
+@using BuiltWithMaui.Models
+
+@if (App is not null)
+{
+    <div class="modal-backdrop" @onclick="Close" @onkeydown="OnKeyDown" tabindex="-1" @ref="_backdrop">
+        <div class="modal" role="dialog" aria-modal="true" aria-label="@App.Name" @onclick:stopPropagation>
+            <button type="button" class="modal-close" aria-label="Close" @onclick="Close">✕</button>
+
+            <h2>
+                @App.Name
+                @if (App.Featured)
+                {
+                    <span class="featured-star" title="Featured">⭐</span>
+                }
+            </h2>
+
+            @if (!string.IsNullOrWhiteSpace(App.Users))
+            {
+                <p class="users">📈 @App.Users</p>
+            }
+            @if (!string.IsNullOrWhiteSpace(App.Author))
+            {
+                <p class="author">
+                    @if (!string.IsNullOrWhiteSpace(App.AuthorGitHub))
+                    {
+                        <text>by <a href="https://github.com/@App.AuthorGitHub" target="_blank" rel="noopener">@App.Author</a></text>
+                    }
+                    else
+                    {
+                        <text>by @App.Author</text>
+                    }
+                </p>
+            }
+
+            <p class="description">@App.Description</p>
+
+            @if (App.Tags.Count > 0)
+            {
+                <p class="tags">
+                    @foreach (var tag in App.Tags)
+                    {
+                        <span class="tag">@tag</span>
+                    }
+                </p>
+            }
+
+            <div class="link-buttons">
+                @foreach (var link in App.Links)
+                {
+                    <a href="@link.Url" target="_blank" rel="noopener" class="link-btn">
+                        <PlatformIcon Platform="@link.Platform" />
+                        @LabelFor(link.Platform)
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public AppEntry? App { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private ElementReference _backdrop;
+    private AppEntry? _previous;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (App is not null && !ReferenceEquals(App, _previous))
+        {
+            _previous = App;
+            await _backdrop.FocusAsync();
+        }
+    }
+
+    private Task Close() => OnClose.InvokeAsync();
+
+    private Task OnKeyDown(KeyboardEventArgs e) =>
+        e.Key == "Escape" ? Close() : Task.CompletedTask;
+
+    private static string LabelFor(string platform) => platform switch
+    {
+        "ios" => "App Store",
+        "android" => "Google Play",
+        "windows" => "Microsoft Store",
+        "macos" => "macOS",
+        "github" => "Source Code",
+        _ => "Website",
+    };
+}
