@@ -2,7 +2,7 @@
 
 On this page you will find a list of known real-world projects that are built using .NET MAUI technology.
 
-🌐 **Browse the showcase website:** https://jamesmontemagno.github.io/built-with-maui/
+🌐 **Browse the showcase website:** https://jfversluis.github.io/built-with-maui/
 
 > [!NOTE]
 > This page is unofficial and is not endorsed by Microsoft in any way. For the official Microsoft customer showcases, please go to: https://dotnet.microsoft.com/platform/customers/maui
@@ -11,7 +11,7 @@ On this page you will find a list of known real-world projects that are built us
 
 Underneath there is a list of apps that have been verified to be built with .NET MAUI. Either because the author themselves added it to this list, posted about it on social media, or because .NET MAUI is listed in the used open-source libraries of the app. 
 
-Do you want to add your own? **[Submit your app](https://github.com/jamesmontemagno/built-with-maui/issues/new?template=submit-app.yml)** by opening an issue — no PR needed! Once approved, your app is added automatically.
+Do you want to add your own? **[Submit your app](https://github.com/jfversluis/built-with-maui/issues/new?template=submit-app.yml)** by opening an issue — no PR needed! Once approved, your app is added automatically.
 
 <details>
 <summary>How the website works (for contributors)</summary>
