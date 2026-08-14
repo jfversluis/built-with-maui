@@ -20,7 +20,8 @@
     };
 }
 
-<img src="@icon" alt="@label" title="@label" loading="lazy" />
+<img src="@icon" alt="@label" title="@label" loading="lazy"
+     class="@(Platform is "ios" or "github" or "macos" ? "icon-on-dark" : null)" />
 
 @code {
     [Parameter, EditorRequired] public string Platform { get; set; } = "";

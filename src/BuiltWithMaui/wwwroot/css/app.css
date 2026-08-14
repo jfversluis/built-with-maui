@@ -478,3 +478,11 @@ a:hover { text-decoration: underline; }
     .results-count { margin-left: 0; width: 100%; }
     .modal { padding: 1.5rem; }
 }
+
+/* Black glyphs (Apple, GitHub) need a light backdrop on the dark theme */
+.icon-on-dark {
+    background: #e8e4dc;
+    border-radius: 50%;
+    padding: 2px;
+    box-sizing: content-box;
+}
