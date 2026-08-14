@@ -1,0 +1,121 @@
+name: Approve App Submission
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  approve:
+    if: github.event.label.name == 'approved' && github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create app data file
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const { execFileSync } = require('child_process');
+            const { parseAppSubmission, slugify, isValidUrl } = require(`${process.env.GITHUB_WORKSPACE}/scripts/issue-form-parser.cjs`);
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issue = context.payload.issue;
+            const issueNum = issue.number;
+
+            async function ensureLabel(name, color, description) {
+              try {
+                await github.rest.issues.getLabel({ owner, repo, name });
+              } catch (err) {
+                if (err.status === 404) {
+                  await github.rest.issues.createLabel({ owner, repo, name, color, description });
+                } else throw err;
+              }
+            }
+
+            await ensureLabel('import-failed', 'd73a4a', 'Import failed and needs maintainer attention');
+
+            const fields = parseAppSubmission(issue.body || '');
+
+            const fail = async (reason) => {
+              await github.rest.issues.addLabels({ owner, repo, issue_number: issueNum, labels: ['import-failed'] });
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: issueNum,
+                body: `⚠️ Import failed: ${reason}\n\nFix the issue body and re-apply the \`approved\` label to try again.`,
+              });
+              core.setFailed(reason);
+            };
+
+            if (!fields.name || !fields.description) {
+              return fail('Missing required fields (name, description).');
+            }
+
+            const links = [];
+            const addLink = (platform, url) => {
+              const clean = (url || '').trim().split(/\s/)[0];
+              if (clean && isValidUrl(clean)) links.push({ platform, url: clean });
+            };
+            addLink('website', fields.website);
+            addLink('ios', fields.ios_url);
+            addLink('android', fields.android_url);
+            addLink('windows', fields.windows_url);
+            addLink('github', fields.github_url);
+
+            if (links.length === 0) {
+              return fail('No valid links found in the submission.');
+            }
+
+            // Unique slug
+            const APPS_DIR = 'data/apps';
+            const baseSlug = slugify(fields.name);
+            if (!baseSlug || baseSlug.length < 2) {
+              return fail('Could not generate a valid slug from the app name.');
+            }
+            let slug = baseSlug;
+            for (let i = 2; fs.existsSync(path.join(APPS_DIR, `${slug}.json`)) && i <= 20; i++) {
+              slug = `${baseSlug}-${i}`;
+            }
+            if (fs.existsSync(path.join(APPS_DIR, `${slug}.json`))) {
+              return fail(`Slug collision for ${baseSlug}.`);
+            }
+
+            const tags = (fields.tags || '')
+              .split(/[,;]+/)
+              .map(t => t.trim().toLowerCase())
+              .filter(Boolean)
+              .slice(0, 6);
+
+            const entry = {
+              name: fields.name.trim(),
+              slug,
+              description: fields.description.trim(),
+              users: (fields.users || '').trim(),
+              website: links.find(l => l.platform === 'website')?.url || '',
+              links,
+              tags,
+              dateAdded: new Date().toISOString().split('T')[0],
+              featured: false,
+            };
+
+            fs.mkdirSync(APPS_DIR, { recursive: true });
+            const filePath = path.join(APPS_DIR, `${slug}.json`);
+            fs.writeFileSync(filePath, JSON.stringify(entry, null, 2) + '\n');
+            console.log(`Wrote ${filePath}`);
+
+            execFileSync('git', ['config', 'user.name', 'github-actions[bot]']);
+            execFileSync('git', ['config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com']);
+            execFileSync('git', ['add', filePath]);
+            execFileSync('git', ['commit', '-m', `Add app: ${entry.name} (closes #${issueNum})`]);
+            execFileSync('git', ['push']);
+
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: issueNum,
+              body: `🎉 **${entry.name}** has been added to the showcase! It will appear on the site once the deployment finishes. Thanks for building with .NET MAUI! 🏗️`,
+            });
+            await github.rest.issues.update({ owner, repo, issue_number: issueNum, state: 'closed' });

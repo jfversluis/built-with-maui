@@ -1,0 +1,24 @@
+{
+  "name": "Money Tracker Infinite",
+  "slug": "money-tracker-infinite",
+  "description": "Personal finance app similar to Microsoft Money and Quicken. Cash and investment accounts, splits, cryptocurrencies, flexible cloneable reports, budgets, etc.",
+  "users": "10K+ (Google Play/AppStore)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.ktechsystems.moneytrackerpro"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/money-tracker-infinite/id1643407103"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9p58pp4llscp"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Bookerei",
+  "slug": "bookerei",
+  "description": "A free, ad-free eBook reader and library manager for EPUB and PDF on Windows and macOS, with shelves, metadata, bookmarks, notes, and customizable themes.",
+  "users": "50K+ downloads",
+  "website": "https://bookerei.com/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://bookerei.com/"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9N2PDKDG1FX1?hl=en-us&gl=US&referrer=appbadge&cid=bookerei.com&mode=direct"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/bookerei/id6476972930"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

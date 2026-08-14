@@ -1,0 +1,20 @@
+{
+  "name": "Red-Point",
+  "slug": "red-point",
+  "description": "The ultimate rock climbing companion app.",
+  "users": "10k+ (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.alphaoutdoors.redpoint"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/au/app/red-point/id1670082950"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

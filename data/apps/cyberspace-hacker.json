@@ -1,0 +1,20 @@
+{
+  "name": "Cyberspace Hacker",
+  "slug": "cyberspace-hacker",
+  "description": "A cyberpunk themed strategic deck builder game. Easy to learn.",
+  "users": "just released",
+  "website": "",
+  "links": [
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/app/cyberspace-hacker/id6759114988"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=se.whaab.cyberspacehacker"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

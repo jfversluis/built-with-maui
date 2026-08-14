@@ -1,0 +1,24 @@
+{
+  "name": "World Explorer",
+  "slug": "world-explorer",
+  "description": "Explore the globe like never before with World Explorer. Our AI-powered app gives you in-depth insights about any place worldwide, provides a comprehensive description, and recommends local attractions with your personalized travel guide.",
+  "users": "100K+ (Microsoft Store + Google Play)",
+  "website": "https://world-explorer.azurewebsites.net",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://world-explorer.azurewebsites.net"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.vladislavantonyuk.worldexplorer"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9p90j9gzjsk2?amp%3Bgl=ua&hl=uk-UA&gl=UA"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

@@ -2,6 +2,8 @@
 
 On this page you will find a list of known real-world projects that are built using .NET MAUI technology.
 
+🌐 **Browse the showcase website:** https://jamesmontemagno.github.io/built-with-maui/
+
 > [!NOTE]
 > This page is unofficial and is not endorsed by Microsoft in any way. For the official Microsoft customer showcases, please go to: https://dotnet.microsoft.com/platform/customers/maui
 
@@ -9,7 +11,17 @@ On this page you will find a list of known real-world projects that are built us
 
 Underneath there is a list of apps that have been verified to be built with .NET MAUI. Either because the author themselves added it to this list, posted about it on social media, or because .NET MAUI is listed in the used open-source libraries of the app. 
 
-Do you want to add your own? Please feel free to [open a pull request](https://github.com/jfversluis/built-with-maui)!
+Do you want to add your own? **[Submit your app](https://github.com/jamesmontemagno/built-with-maui/issues/new?template=submit-app.yml)** by opening an issue — no PR needed! Once approved, your app is added automatically.
+
+<details>
+<summary>How the website works (for contributors)</summary>
+
+- App data lives in [`data/apps/`](data/apps) — one JSON file per app.
+- The website is a Blazor WebAssembly app in [`src/BuiltWithMaui/`](src/BuiltWithMaui), deployed to GitHub Pages.
+- Submissions come in as GitHub issues, get auto-triaged, and on approval a workflow commits a new JSON file and the site redeploys.
+- To regenerate `apps.json` locally: `node scripts/merge-data.mjs`. To run the site: `cd src/BuiltWithMaui && dotnet run`.
+
+</details>
 
 | App Name | Description | (Est.) No. Users/Downloads | More information |
 | -------- | ----------- | -------------------------- |:----------------:|

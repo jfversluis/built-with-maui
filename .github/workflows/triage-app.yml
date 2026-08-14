@@ -1,0 +1,191 @@
+name: Triage App Submission
+
+on:
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number to retriage (leave empty for all open new-app issues)'
+        required: false
+        type: string
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  triage:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.issue.labels.*.name, 'new-app') ||
+      startsWith(github.event.issue.title, '[App]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Triage submission
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const { parseAppSubmission, isValidUrl } = require(`${process.env.GITHUB_WORKSPACE}/scripts/issue-form-parser.cjs`);
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            let issuesToTriage = [];
+
+            if (context.eventName === 'workflow_dispatch') {
+              const inputNum = '${{ github.event.inputs.issue_number }}'.trim();
+              if (inputNum) {
+                const { data: issue } = await github.rest.issues.get({ owner, repo, issue_number: parseInt(inputNum) });
+                issuesToTriage.push(issue);
+              } else {
+                const { data: issues } = await github.rest.issues.listForRepo({
+                  owner, repo, labels: 'new-app', state: 'open', per_page: 100,
+                });
+                issuesToTriage = issues;
+              }
+            } else if (context.eventName === 'issue_comment') {
+              const issueState = context.payload.issue?.state;
+              const commentAuthor = context.payload.comment?.user?.login;
+              if (issueState !== 'open' || commentAuthor === 'github-actions[bot]') return;
+              issuesToTriage.push(context.payload.issue);
+            } else {
+              issuesToTriage.push(context.payload.issue);
+            }
+
+            async function ensureLabel(name, color, description) {
+              try {
+                await github.rest.issues.getLabel({ owner, repo, name });
+              } catch (err) {
+                if (err.status === 404) {
+                  await github.rest.issues.createLabel({ owner, repo, name, color, description });
+                } else throw err;
+              }
+            }
+
+            async function removeLabelIfExists(issueNumber, name) {
+              try {
+                await github.rest.issues.removeLabel({ owner, repo, issue_number: issueNumber, name });
+              } catch (err) {
+                if (err.status !== 404) throw err;
+              }
+            }
+
+            await ensureLabel('ready-to-approve', '0075ca', 'Passes automated checks — ready for maintainer approval');
+            await ensureLabel('needs-attention', 'd73a4a', 'Automated checks found problems');
+            await ensureLabel('duplicate', 'cfd3d7', 'This app is already listed');
+
+            // Existing app names + links for duplicate detection
+            const APPS_DIR = 'data/apps';
+            const existing = [];
+            if (fs.existsSync(APPS_DIR)) {
+              for (const file of fs.readdirSync(APPS_DIR)) {
+                if (!file.endsWith('.json')) continue;
+                try {
+                  const entry = JSON.parse(fs.readFileSync(path.join(APPS_DIR, file), 'utf-8'));
+                  existing.push({
+                    slug: entry.slug,
+                    name: (entry.name || '').toLowerCase(),
+                    urls: (entry.links || []).map(l => (l.url || '').toLowerCase()),
+                  });
+                } catch { /* skip malformed */ }
+              }
+            }
+
+            async function checkUrl(url) {
+              try {
+                const controller = new AbortController();
+                const timeout = setTimeout(() => controller.abort(), 8000);
+                const res = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: controller.signal });
+                clearTimeout(timeout);
+                return res.status < 400;
+              } catch {
+                return false;
+              }
+            }
+
+            for (const issue of issuesToTriage) {
+              const fields = parseAppSubmission(issue.body || '');
+              const issueNum = issue.number;
+              console.log(`🔍 Triaging: ${fields.name || issue.title} (#${issueNum})`);
+
+              // Ensure new-app label
+              const currentLabels = (issue.labels || []).map(l => l.name);
+              if (!currentLabels.includes('new-app')) {
+                await github.rest.issues.addLabels({ owner, repo, issue_number: issueNum, labels: ['new-app'] });
+              }
+
+              const problems = [];
+              const linkFields = [
+                ['Website URL', fields.website],
+                ['App Store URL', fields.ios_url],
+                ['Google Play URL', fields.android_url],
+                ['Microsoft Store URL', fields.windows_url],
+                ['GitHub Repository URL', fields.github_url],
+              ];
+
+              // Required fields
+              if (!fields.name) problems.push('⚠️ **Missing app name**');
+              if (!fields.description) problems.push('⚠️ **Missing description**');
+
+              // At least one link
+              const providedLinks = linkFields.filter(([, v]) => v && v.trim());
+              if (providedLinks.length === 0) {
+                problems.push('❌ **No links provided** — please add at least one store or website link so people can find your app.');
+              }
+
+              // URL format + reachability
+              for (const [label, value] of providedLinks) {
+                const url = value.trim().split(/\s/)[0];
+                if (!isValidUrl(url)) {
+                  problems.push(`❌ **${label}** doesn't look like a valid URL: \`${url}\``);
+                  continue;
+                }
+                const ok = await checkUrl(url);
+                if (ok) {
+                  console.log(`  ✅ ${label}: ${url}`);
+                } else {
+                  problems.push(`⚠️ **${label}** didn't respond — please double-check \`${url}\``);
+                }
+              }
+
+              // Duplicate detection (name or any matching URL)
+              const nameKey = (fields.name || '').toLowerCase();
+              const urls = providedLinks.map(([, v]) => v.trim().toLowerCase().split(/\s/)[0]);
+              const dupe = existing.find(e =>
+                (nameKey && e.name === nameKey) ||
+                e.urls.some(u => urls.includes(u)));
+              if (dupe) {
+                problems.push(`♻️ **Possible duplicate** — this app is already listed as **${dupe.slug}**.`);
+              }
+
+              // Apply labels
+              if (problems.length === 0) {
+                await github.rest.issues.addLabels({ owner, repo, issue_number: issueNum, labels: ['ready-to-approve'] });
+                await removeLabelIfExists(issueNum, 'needs-attention');
+                if (dupe) await removeLabelIfExists(issueNum, 'duplicate');
+                console.log('  ✅ ready-to-approve');
+              } else {
+                await github.rest.issues.addLabels({ owner, repo, issue_number: issueNum, labels: ['needs-attention'] });
+                await removeLabelIfExists(issueNum, 'ready-to-approve');
+                if (dupe) await github.rest.issues.addLabels({ owner, repo, issue_number: issueNum, labels: ['duplicate'] });
+
+                // Comment once
+                const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: issueNum });
+                const alreadyCommented = comments.some(c =>
+                  c.user.login === 'github-actions[bot]' && c.body.includes('automated checks on your submission'));
+                if (!alreadyCommented) {
+                  await github.rest.issues.createComment({
+                    owner, repo, issue_number: issueNum,
+                    body: `👋 Thanks for submitting **${fields.name || 'your app'}** to Built with .NET MAUI!\n\nWe ran some automated checks on your submission and found a few things to address:\n\n${problems.map(p => `- ${p}`).join('\n')}\n\nOnce you've updated the issue, we'll take another look! 🏗️`,
+                  });
+                }
+                console.log(`  ⚠️ needs-attention (${problems.length} problem(s))`);
+              }
+            }

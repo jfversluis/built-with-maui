@@ -1,0 +1,124 @@
+@page "/submit"
+@using System.Text
+@inject NavigationManager Nav
+
+<PageTitle>Submit Your App — Built with .NET MAUI</PageTitle>
+
+<div class="container submit-page">
+    <h1>✨ Submit Your App</h1>
+    <p style="color: var(--text-muted);">
+        Built something with .NET MAUI? Add it to the list! Fill out the form below and
+        we'll open a pre-filled GitHub issue — one click and you're done.
+    </p>
+
+    <div class="info-card">
+        <strong>How it works</strong>
+        <ol>
+            <li>Fill out this form and hit <strong>Submit via GitHub</strong>.</li>
+            <li>A pre-filled issue opens on GitHub — review it and click <em>Submit new issue</em>.</li>
+            <li>Our bot automatically validates your submission (links, duplicates, required fields).</li>
+            <li>A maintainer approves it, and your app appears on the site automatically. 🎉</li>
+        </ol>
+    </div>
+
+    <label for="name">App Name *</label>
+    <input id="name" type="text" @bind="_name" placeholder="e.g., My Awesome App" />
+    @if (ShowError(_name)) { <div class="validation-error">App name is required.</div> }
+
+    <label for="desc">Description *</label>
+    <textarea id="desc" @bind="_description" placeholder="What does your app do? Who is it for?"></textarea>
+    @if (ShowError(_description)) { <div class="validation-error">Description is required.</div> }
+
+    <label for="users">Estimated Users / Downloads</label>
+    <input id="users" type="text" @bind="_users" placeholder="e.g., 10K+ (Google Play)" />
+    <div class="hint">A rough idea helps visitors — e.g. "500+ downloads", "1M+ users".</div>
+
+    <label for="website">Website</label>
+    <input id="website" type="text" @bind="_website" placeholder="https://yourapp.com" />
+
+    <label for="ios">App Store (iOS / macOS) URL</label>
+    <input id="ios" type="text" @bind="_iosUrl" placeholder="https://apps.apple.com/..." />
+
+    <label for="android">Google Play URL</label>
+    <input id="android" type="text" @bind="_androidUrl" placeholder="https://play.google.com/store/apps/details?id=..." />
+
+    <label for="windows">Microsoft Store URL</label>
+    <input id="windows" type="text" @bind="_windowsUrl" placeholder="https://apps.microsoft.com/detail/..." />
+
+    <label for="github">GitHub Repository (if open source)</label>
+    <input id="github" type="text" @bind="_githubUrl" placeholder="https://github.com/you/your-app" />
+
+    <label for="tags">Tags (comma-separated)</label>
+    <input id="tags" type="text" @bind="_tags" placeholder="e.g., productivity, finance, games" />
+
+    @if (_linkError)
+    {
+        <div class="validation-error" style="margin-top: 1rem;">
+            Please provide at least one link (website or a store listing) so people can find your app.
+        </div>
+    }
+
+    <div class="submit-actions">
+        <button class="btn btn-primary" @onclick="OpenIssue">Submit via GitHub →</button>
+        <span class="hint">Opens GitHub in a new tab with everything pre-filled.</span>
+    </div>
+</div>
+
+@code {
+    private const string IssueBase =
+        "https://github.com/jamesmontemagno/built-with-maui/issues/new?template=submit-app.yml";
+
+    private string _name = "";
+    private string _description = "";
+    private string _users = "";
+    private string _website = "";
+    private string _iosUrl = "";
+    private string _androidUrl = "";
+    private string _windowsUrl = "";
+    private string _githubUrl = "";
+    private string _tags = "";
+    private bool _triedSubmit;
+    private bool _linkError;
+
+    private bool ShowError(string value) => _triedSubmit && string.IsNullOrWhiteSpace(value);
+
+    private void OpenIssue()
+    {
+        _triedSubmit = true;
+        _linkError = false;
+
+        var hasLink = !string.IsNullOrWhiteSpace(_website)
+            || !string.IsNullOrWhiteSpace(_iosUrl)
+            || !string.IsNullOrWhiteSpace(_androidUrl)
+            || !string.IsNullOrWhiteSpace(_windowsUrl)
+            || !string.IsNullOrWhiteSpace(_githubUrl);
+
+        if (string.IsNullOrWhiteSpace(_name) || string.IsNullOrWhiteSpace(_description))
+            return;
+        if (!hasLink)
+        {
+            _linkError = true;
+            return;
+        }
+
+        var url = new StringBuilder(IssueBase);
+        url.Append("&title=").Append(Uri.EscapeDataString($"[App] {_name.Trim()}"));
+        AppendField(url, "name", _name);
+        AppendField(url, "description", _description);
+        AppendField(url, "users", _users);
+        AppendField(url, "website", _website);
+        AppendField(url, "ios_url", _iosUrl);
+        AppendField(url, "android_url", _androidUrl);
+        AppendField(url, "windows_url", _windowsUrl);
+        AppendField(url, "github_url", _githubUrl);
+        AppendField(url, "tags", _tags);
+
+        Nav.NavigateTo(url.ToString(), forceLoad: true);
+    }
+
+    private static void AppendField(StringBuilder url, string key, string value)
+    {
+        if (!string.IsNullOrWhiteSpace(value))
+            url.Append('&').Append(key).Append('=').Append(Uri.EscapeDataString(value.Trim()));
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Mircules DX Cluster",
+  "slug": "mircules-dx-cluster",
+  "description": "DX spot viewer for ham radio operators. Connects to web clusters or DXSpider telnet servers. Shows spots across MF/HF/VHF/UHF bands with callsign lookups and QRZ integration.",
+  "users": "1000+ paid downloads (App Store)",
+  "website": "",
+  "links": [
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/app/mircules-dx-cluster/id595659818"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

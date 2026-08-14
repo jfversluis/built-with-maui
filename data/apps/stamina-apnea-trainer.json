@@ -1,0 +1,20 @@
+{
+  "name": "STAmina Apnea Trainer",
+  "slug": "stamina-apnea-trainer",
+  "description": "The best apnea app to improve the breath-holding time for freediving, scuba diving and spearfishing with 5 different apnea tables types.",
+  "users": "50K+ (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.squarecrowdapps.stamina&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/stamina-apnea-trainer/id994874491?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

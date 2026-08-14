@@ -1,0 +1,20 @@
+{
+  "name": "Maps.lt",
+  "slug": "maps-lt",
+  "description": "Lithuanian maps application.",
+  "users": "500+ (Google Play/AppStore)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/search?q=maps.lt&c=apps"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/lt/app/maps-lt/id840766166?uo=2"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

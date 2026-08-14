@@ -1,0 +1,20 @@
+{
+  "name": "My Car Service Car Manage",
+  "slug": "my-car-service-car-manage",
+  "description": "A clean, simple, and powerful way to manage your car's health, fuel economy, and service history, all in one place for Android & Windows",
+  "users": "36K+ (Google Play)  710 (Windows store)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.MyCarService.mycarservice&hl=en"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9nn4j90pxm9w?hl=en-US&gl=US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

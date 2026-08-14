@@ -1,0 +1,20 @@
+{
+  "name": "Notezilla",
+  "slug": "notezilla",
+  "description": "Notezilla is a notes and reminders app that syncs with Notezilla on Windows which is a leading, highly rated sticky notes app.",
+  "users": "10K + downloads (Google Play + App Store)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.conceptworld.notezilla"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/notezilla-notes-reminders/id964449712"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

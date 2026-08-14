@@ -1,0 +1,16 @@
+{
+  "name": "Brick Manager",
+  "slug": "brick-manager",
+  "description": "This app is used by LEGO enthousiasts and it's a tool to help you organize all your LEGO sets when all bricks are mixed up in a big box. It helps you to keep track of all bricks you've collected and which ones are still missing",
+  "users": "150K+ downloads (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.psychosoft.brick_manager"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

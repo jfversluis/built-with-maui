@@ -1,0 +1,20 @@
+{
+  "name": "Guitar Fretboard: Scales",
+  "slug": "guitar-fretboard-scales",
+  "description": "Guitar Fretboard app is designed to help you learn scales, memorize the fretboard and train your ear.",
+  "users": "10K+ downloads (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Tripsta",
+  "slug": "tripsta",
+  "description": "Trip tracking app with statistics",
+  "users": "50+ (Google Play)",
+  "website": "https://tripsta.app/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://tripsta.app/"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.universley.tripsta&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/tripsta/id6448712233?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

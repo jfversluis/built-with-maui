@@ -1,0 +1,20 @@
+{
+  "name": "CycleProCut",
+  "slug": "cycleprocut",
+  "description": "CycleProCut is a powerful cycling app built for riders who want to train smarter and push harder. Create personalized training plans, simulate performance outcomes, and analyze advanced ride metrics. With intuitive setup, integrated fitness tools, and no login required, CycleProCut transforms your pocket into a pro-level cycling coach.",
+  "users": "1K+ downloads",
+  "website": "",
+  "links": [
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/app/id6698868765"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=pro.bikesport.cycleprocut"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

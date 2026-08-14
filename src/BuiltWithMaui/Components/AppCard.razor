@@ -1,0 +1,26 @@
+@namespace BuiltWithMaui.Components
+@using BuiltWithMaui.Models
+
+<a href="app/@App.Slug" class="app-card">
+    <h3>
+        @App.Name
+        @if (App.Featured)
+        {
+            <span class="featured-star" title="Featured">⭐</span>
+        }
+    </h3>
+    <p class="desc">@App.Description</p>
+    <div class="meta">
+        <span class="users">@App.Users</span>
+        <span class="platform-badges">
+            @foreach (var platform in App.Platforms)
+            {
+                <PlatformIcon Platform="@platform" />
+            }
+        </span>
+    </div>
+</a>
+
+@code {
+    [Parameter, EditorRequired] public AppEntry App { get; set; } = default!;
+}

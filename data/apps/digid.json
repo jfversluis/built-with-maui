@@ -1,0 +1,24 @@
+{
+  "name": "DigiD",
+  "slug": "digid",
+  "description": "Dutch government authentication app for all government services, to be used by Dutch citizens.",
+  "users": "11M+ (Google Play)  8M+ (App Store)",
+  "website": "https://www.digid.nl/en/login-methods/digid-app/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://www.digid.nl/en/login-methods/digid-app/"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=nl.rijksoverheid.digid.pub&hl=en-US"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/gb/app/digid/id1208460960?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

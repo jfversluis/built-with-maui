@@ -1,0 +1,27 @@
+@namespace BuiltWithMaui.Components
+
+@{
+    var icon = Platform switch
+    {
+        "ios" => "assets-icons/ios.png",
+        "android" => "assets-icons/android.png",
+        "windows" => "assets-icons/windows.png",
+        "github" => "assets-icons/github.png",
+        _ => "assets-icons/website.png",
+    };
+    var label = Platform switch
+    {
+        "ios" => "iOS / macOS",
+        "android" => "Android",
+        "windows" => "Windows",
+        "macos" => "macOS",
+        "github" => "GitHub",
+        _ => "Website",
+    };
+}
+
+<img src="@icon" alt="@label" title="@label" loading="lazy" />
+
+@code {
+    [Parameter, EditorRequired] public string Platform { get; set; } = "";
+}

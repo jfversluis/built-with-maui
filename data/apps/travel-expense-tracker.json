@@ -1,0 +1,20 @@
+{
+  "name": "Travel Expense Tracker",
+  "slug": "travel-expense-tracker",
+  "description": "Travel Expense Tracker App with Online-First Offline Accesible Approach. Manage Trips, Expeses, Expense Categories. Online Data Store, Offline Data Access",
+  "users": "15+ (Google Play) 25+ (App Store)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.abhayprince.travelexpensetracker"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/in/app/travel-expense-tracker-lite/id6746136868"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

@@ -1,0 +1,125 @@
+@page "/"
+@using BuiltWithMaui.Models
+@using BuiltWithMaui.Services
+@using BuiltWithMaui.Components
+@inject AppDataService Data
+
+<PageTitle>Built with .NET MAUI — Real-world apps</PageTitle>
+
+<section class="hero">
+    <h1>Built with .NET MAUI</h1>
+    <p>Real-world apps for Android, iOS, macOS, and Windows — all built with .NET Multi-platform App UI.</p>
+    @if (_apps is not null)
+    {
+        <div class="count"><strong>@_apps.Count</strong> apps and counting</div>
+    }
+    <div>
+        <a href="submit" class="btn btn-primary">✨ Add Your App</a>
+    </div>
+</section>
+
+<div class="container">
+    @if (_apps is null)
+    {
+        <p style="text-align:center; color: var(--text-muted);">Loading apps…</p>
+    }
+    else
+    {
+        <div class="filter-bar">
+            <div class="filter-row">
+                <input class="search-input" type="text" placeholder="🔍 Search apps…"
+                       @bind="_search" @bind:event="oninput" />
+                <select class="sort-select" @bind="_sort">
+                    <option value="name">Sort: Name</option>
+                    <option value="newest">Sort: Newest</option>
+                </select>
+            </div>
+            <div class="filter-row">
+                <div class="platform-chips">
+                    @foreach (var p in _platformFilters)
+                    {
+                        <button class="chip @(_selectedPlatforms.Contains(p.Key) ? "active" : "")"
+                                @onclick="() => TogglePlatform(p.Key)">
+                            <img src="@p.Icon" alt="" /> @p.Label
+                        </button>
+                    }
+                </div>
+                <span class="results-count">@Filtered.Count() of @_apps.Count apps</span>
+            </div>
+        </div>
+
+        <div class="app-grid">
+            @foreach (var app in Filtered)
+            {
+                <AppCard App="@app" />
+            }
+        </div>
+
+        @if (!Filtered.Any())
+        {
+            <p style="text-align:center; color: var(--text-muted); padding: 2rem 0;">
+                No apps match your filters. <a href="" @onclick="ClearFilters" @onclick:preventDefault>Clear filters</a>
+            </p>
+        }
+    }
+</div>
+
+@code {
+    private List<AppEntry>? _apps;
+    private string _search = "";
+    private string _sort = "name";
+    private readonly HashSet<string> _selectedPlatforms = [];
+
+    private static readonly (string Key, string Label, string Icon)[] _platformFilters =
+    [
+        ("android", "Android", "assets-icons/android.png"),
+        ("ios", "iOS / macOS", "assets-icons/ios.png"),
+        ("windows", "Windows", "assets-icons/windows.png"),
+        ("github", "Open Source", "assets-icons/github.png"),
+        ("website", "Web", "assets-icons/website.png"),
+    ];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _apps = await Data.GetAppsAsync();
+    }
+
+    private IEnumerable<AppEntry> Filtered
+    {
+        get
+        {
+            if (_apps is null) return [];
+            var q = _apps.AsEnumerable();
+
+            if (!string.IsNullOrWhiteSpace(_search))
+            {
+                var term = _search.Trim();
+                q = q.Where(a =>
+                    a.Name.Contains(term, StringComparison.OrdinalIgnoreCase) ||
+                    a.Description.Contains(term, StringComparison.OrdinalIgnoreCase) ||
+                    a.Tags.Any(t => t.Contains(term, StringComparison.OrdinalIgnoreCase)));
+            }
+
+            if (_selectedPlatforms.Count > 0)
+            {
+                q = q.Where(a => _selectedPlatforms.All(p => a.HasPlatform(p)));
+            }
+
+            return _sort == "newest"
+                ? q.OrderByDescending(a => a.DateAdded).ThenBy(a => a.Name)
+                : q.OrderBy(a => a.Name);
+        }
+    }
+
+    private void TogglePlatform(string platform)
+    {
+        if (!_selectedPlatforms.Remove(platform))
+            _selectedPlatforms.Add(platform);
+    }
+
+    private void ClearFilters()
+    {
+        _search = "";
+        _selectedPlatforms.Clear();
+    }
+}

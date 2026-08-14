@@ -1,0 +1,20 @@
+{
+  "name": "eVoice - Business Phone Number",
+  "slug": "evoice-business-phone-number",
+  "description": "eVoice provides a simple, reliable virtual phone system that brings your entire business communication together in one app. Equip your team with multiple local or toll-free phone numbers and create multiple extensions, all managed from any smartphone or tablet. This app is fully integrated with Apple CallKit on iOS and Android Telecom on Android.",
+  "users": "200K+ downloads",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.j2.evoicenew&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/evoice-business-phone-number/id644008121"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

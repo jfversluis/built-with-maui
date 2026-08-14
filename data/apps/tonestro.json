@@ -1,0 +1,20 @@
+{
+  "name": "tonestro",
+  "slug": "tonestro",
+  "description": "Learn music instruments from scratch",
+  "users": "12 Mio (Apple App Store & Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/tonestro-music-lessons/id1365630760"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=at.funmusic.sepp.mobile"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

@@ -1,0 +1,20 @@
+{
+  "name": "HAM QuickLog",
+  "slug": "ham-quicklog",
+  "description": "Amateur radio logging app with templates for HF, POTA, Contest, and SWL. Includes offline tools like Grid Calculator, Azimuth Calculator, Q-Codes, and ITU Prefixes. Full ADIF import/export.",
+  "users": "1500+ paid downloads (Google Play/AppStore)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.mircules.HAM.QuickLog"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/mircules-ham-quicklog/id939665753"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

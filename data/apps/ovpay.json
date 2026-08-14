@@ -1,0 +1,24 @@
+{
+  "name": "OVPay",
+  "slug": "ovpay",
+  "description": "The OVPay app is used for public transportation payments in the Netherlands.",
+  "users": "100K+ downloads (Google Play)",
+  "website": "https://www.ovpay.nl/en",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://www.ovpay.nl/en"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=nl.tls.ovpay&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/nl/app/ovpay/id1542164084?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

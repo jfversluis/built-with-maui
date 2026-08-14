@@ -1,0 +1,24 @@
+{
+  "name": "My Ride K-12",
+  "slug": "my-ride-k-12",
+  "description": "Parents and students can access their own secure data for bus stop location, route, and pickup time at the touch of a button. Convenient access to this information and rapid communication via push notifications help reduce parent calls to the transportation department for everyday updates.",
+  "users": "1.3M active users",
+  "website": "https://myridek12.tylerapp.com/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://myridek12.tylerapp.com/"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.tylertech.myridek12"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/my-ride-k-12/id6443848115"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

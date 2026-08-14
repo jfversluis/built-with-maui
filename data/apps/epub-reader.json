@@ -1,0 +1,20 @@
+{
+  "name": "Epub Reader",
+  "slug": "epub-reader",
+  "description": "Epub Reader that allows you to read Epub formatted ebooks and connect and download ebooks from Calibre Content servers. Supports variable fonts sizes, font types, is paginated by default, works on Windows, and Android. iOS and MacOS support coming soon!",
+  "users": "(Google Play  & MS App store)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.companyname.epubreader"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9n3t9qnkk7vx?hl=en-GB&gl=CA"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

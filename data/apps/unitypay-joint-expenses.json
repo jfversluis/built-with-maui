@@ -1,0 +1,24 @@
+{
+  "name": "UnityPay: Joint Expenses",
+  "slug": "unitypay-joint-expenses",
+  "description": "Expense Tracker for Couples",
+  "users": "100+ (Google Play)",
+  "website": "https://www.williambelle.co/apps/unity-pay",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://www.williambelle.co/apps/unity-pay"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=co.williambelle.unitypay&hl=en&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/unitypay-joint-expenses/id6482982417"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

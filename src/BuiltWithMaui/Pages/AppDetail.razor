@@ -1,0 +1,80 @@
+@page "/app/{Slug}"
+@using BuiltWithMaui.Models
+@using BuiltWithMaui.Services
+@using BuiltWithMaui.Components
+@inject AppDataService Data
+
+@if (_app is null)
+{
+    <div class="container app-detail">
+        <p style="color: var(--text-muted);">@(_notFound ? "App not found." : "Loading…")</p>
+        @if (_notFound)
+        {
+            <a href="" class="btn btn-secondary">← Back to all apps</a>
+        }
+    </div>
+}
+else
+{
+    <PageTitle>@_app.Name — Built with .NET MAUI</PageTitle>
+
+    <div class="container app-detail">
+        <a href="" style="font-size: 0.9rem;">← All apps</a>
+        <h1>
+            @_app.Name
+            @if (_app.Featured)
+            {
+                <span class="featured-star" title="Featured">⭐</span>
+            }
+        </h1>
+        @if (!string.IsNullOrWhiteSpace(_app.Users))
+        {
+            <p class="users">📈 @_app.Users</p>
+        }
+
+        <p class="description">@_app.Description</p>
+
+        @if (_app.Tags.Count > 0)
+        {
+            <p>
+                @foreach (var tag in _app.Tags)
+                {
+                    <span class="tag">@tag</span>
+                }
+            </p>
+        }
+
+        <div class="link-buttons">
+            @foreach (var link in _app.Links)
+            {
+                <a href="@link.Url" target="_blank" rel="noopener" class="link-btn">
+                    <PlatformIcon Platform="@link.Platform" />
+                    @LabelFor(link.Platform)
+                </a>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public string Slug { get; set; } = "";
+
+    private AppEntry? _app;
+    private bool _notFound;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _app = await Data.GetAppAsync(Slug);
+        _notFound = _app is null;
+    }
+
+    private static string LabelFor(string platform) => platform switch
+    {
+        "ios" => "App Store",
+        "android" => "Google Play",
+        "windows" => "Microsoft Store",
+        "macos" => "macOS",
+        "github" => "Source Code",
+        _ => "Website",
+    };
+}

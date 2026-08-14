@@ -1,0 +1,24 @@
+{
+  "name": "Swipelore",
+  "slug": "swipelore",
+  "description": "Learn English and American culture through videos",
+  "users": "500+ (Google Play)",
+  "website": "https://swipelore.com/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://swipelore.com/"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.companyname.swiplore.mobileapp&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/swipelore-english-with-shorts/id6479754157?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

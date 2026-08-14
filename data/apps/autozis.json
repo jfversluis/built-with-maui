@@ -1,0 +1,28 @@
+{
+  "name": "Autozis",
+  "slug": "autozis",
+  "description": "All In One Car Service Tracker, Keep everything related to your vehicle in a single place, accessible anywhere. Whether you drive a petrol car, an hybrid, or an Electric Vehicle, Autozis helps you keep track of every service, every trip, every charge and every fuel with ease.",
+  "users": "500+ (Google Play, App Store & Windows)",
+  "website": "https://autozis.com/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://autozis.com/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/car-service-tracker-autozis/id6759105162"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.autozis.app"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9nqhv9mnf857"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

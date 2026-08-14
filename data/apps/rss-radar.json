@@ -1,0 +1,20 @@
+{
+  "name": "RSS Radar",
+  "slug": "rss-radar",
+  "description": "News Reader, Filter & Alerts.",
+  "users": "Unknown",
+  "website": "",
+  "links": [
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9mwhll3bbx9f?hl=en-us"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/rss-radar/id6496271582?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

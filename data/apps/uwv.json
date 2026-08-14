@@ -1,0 +1,20 @@
+{
+  "name": "UWV",
+  "slug": "uwv",
+  "description": "Dutch social security and employment agency.",
+  "users": "100K+ (Google Play) 100K+ (App Store)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=nl.uwv.app&hl=nl"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/nl/app/uwv/id1478274972"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

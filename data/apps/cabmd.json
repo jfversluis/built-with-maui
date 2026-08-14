@@ -1,0 +1,20 @@
+{
+  "name": "CabMD",
+  "slug": "cabmd",
+  "description": "CabMD is a mobile companion app for Ontario medical billing, helping providers capture patient and claim information and work with CabMD billing workflows from iOS and Android devices.",
+  "users": "Unknown",
+  "website": "",
+  "links": [
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/ca/app/cabmd/id1346849485"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.cssi.CabMDMobile"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

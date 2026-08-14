@@ -1,0 +1,24 @@
+{
+  "name": "ProShapeHub",
+  "slug": "proshapehub",
+  "description": "An app for personal trainers to manage their students, as well as their training and dietary needs. As a user, you will find a friendly interface to help you carry out gym workouts and manage your diet.",
+  "users": "10+ downloads",
+  "website": "https://proshapehub.com/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://proshapehub.com/"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.fivehigh.proshape"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/proshapehub/id6741083902"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}
