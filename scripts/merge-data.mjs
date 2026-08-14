@@ -43,6 +43,7 @@ for (const file of files) {
     }
   }
   if (entry.website && !/^https?:\/\/.+/.test(entry.website)) errors.push(`${file}: invalid website URL`);
+  if (entry.authorGitHub && !/^[a-zA-Z0-9-]+$/.test(entry.authorGitHub)) errors.push(`${file}: invalid authorGitHub "${entry.authorGitHub}"`);
   if (!Array.isArray(entry.tags)) entry.tags = [];
 
   apps.push(entry);

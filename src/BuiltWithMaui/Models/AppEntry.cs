@@ -8,6 +8,8 @@ public class AppEntry
     [JsonPropertyName("slug")] public string Slug { get; set; } = "";
     [JsonPropertyName("description")] public string Description { get; set; } = "";
     [JsonPropertyName("users")] public string Users { get; set; } = "";
+    [JsonPropertyName("author")] public string Author { get; set; } = "";
+    [JsonPropertyName("authorGitHub")] public string AuthorGitHub { get; set; } = "";
     [JsonPropertyName("website")] public string Website { get; set; } = "";
     [JsonPropertyName("links")] public List<AppLink> Links { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];

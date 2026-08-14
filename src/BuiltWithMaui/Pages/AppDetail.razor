@@ -31,6 +31,19 @@ else
         {
             <p class="users">📈 @_app.Users</p>
         }
+        @if (!string.IsNullOrWhiteSpace(_app.Author))
+        {
+            <p class="author">
+                @if (!string.IsNullOrWhiteSpace(_app.AuthorGitHub))
+                {
+                    <text>by <a href="https://github.com/@_app.AuthorGitHub" target="_blank" rel="noopener">@_app.Author</a></text>
+                }
+                else
+                {
+                    <text>by @_app.Author</text>
+                }
+            </p>
+        }
 
         <p class="description">@_app.Description</p>
 

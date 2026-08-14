@@ -64,6 +64,20 @@ body:
       placeholder: "https://github.com/you/your-app"
 
   - type: input
+    id: author
+    attributes:
+      label: Your Name (optional)
+      description: Shown as the app's author on the site.
+      placeholder: "e.g., Jane Developer"
+
+  - type: input
+    id: author_github
+    attributes:
+      label: Your GitHub Username (optional)
+      description: Links your name to your GitHub profile on the site.
+      placeholder: "e.g., janedev"
+
+  - type: input
     id: tags
     attributes:
       label: Tags (comma-separated)

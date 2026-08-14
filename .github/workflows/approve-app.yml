@@ -91,11 +91,19 @@ jobs:
               .filter(Boolean)
               .slice(0, 6);
 
+            const author = (fields.author || '').trim();
+            const authorGitHub = (fields.author_github || '').trim().replace(/^@/, '').replace(/[^a-zA-Z0-9-]/g, '');
+            if (fields.author_github && !authorGitHub) {
+              return fail('GitHub username contains no valid characters.');
+            }
+
             const entry = {
               name: fields.name.trim(),
               slug,
               description: fields.description.trim(),
               users: (fields.users || '').trim(),
+              author,
+              authorGitHub,
               website: links.find(l => l.platform === 'website')?.url || '',
               links,
               tags,

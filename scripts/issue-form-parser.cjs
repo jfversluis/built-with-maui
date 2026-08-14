@@ -18,11 +18,15 @@ const FIELD_LABELS = {
   android_url: 'Google Play URL',
   windows_url: 'Microsoft Store URL',
   github_url: 'GitHub Repository URL (if open source)',
+  author: 'Your Name (optional)',
+  author_github: 'Your GitHub Username (optional)',
   tags: 'Tags (comma-separated)',
 };
 
 const FIELD_LABEL_ALIASES = {
   github_url: ['GitHub Repository URL'],
+  author: ['Your Name'],
+  author_github: ['Your GitHub Username'],
   tags: ['Tags'],
 };
 

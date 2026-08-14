@@ -48,6 +48,13 @@
     <label for="github">GitHub Repository (if open source)</label>
     <input id="github" type="text" @bind="_githubUrl" placeholder="https://github.com/you/your-app" />
 
+    <label for="author">Your Name</label>
+    <input id="author" type="text" @bind="_author" placeholder="e.g., Jane Developer" />
+
+    <label for="author-github">Your GitHub Username</label>
+    <input id="author-github" type="text" @bind="_authorGitHub" placeholder="e.g., janedev" />
+    <div class="hint">Optional — links your name to your GitHub profile on the site.</div>
+
     <label for="tags">Tags (comma-separated)</label>
     <input id="tags" type="text" @bind="_tags" placeholder="e.g., productivity, finance, games" />
 
@@ -76,6 +83,8 @@
     private string _androidUrl = "";
     private string _windowsUrl = "";
     private string _githubUrl = "";
+    private string _author = "";
+    private string _authorGitHub = "";
     private string _tags = "";
     private bool _triedSubmit;
     private bool _linkError;
@@ -111,6 +120,8 @@
         AppendField(url, "android_url", _androidUrl);
         AppendField(url, "windows_url", _windowsUrl);
         AppendField(url, "github_url", _githubUrl);
+        AppendField(url, "author", _author);
+        AppendField(url, "author_github", _authorGitHub);
         AppendField(url, "tags", _tags);
 
         Nav.NavigateTo(url.ToString(), forceLoad: true);
