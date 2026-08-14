@@ -1,4 +1,7 @@
 @inherits LayoutComponentBase
+@using BuiltWithMaui.Components
+@using BuiltWithMaui.Services
+@inject ThemeService Theme
 
 <header class="site-header">
     <div class="container">
@@ -10,6 +13,7 @@
             <NavLink href="resources">Resources</NavLink>
             <NavLink href="submit">Submit Your App</NavLink>
             <a href="https://github.com/jfversluis/built-with-maui" target="_blank" rel="noopener">GitHub</a>
+            <ThemeToggle />
         </nav>
     </div>
 </header>
@@ -25,3 +29,11 @@
         <br />Platform icons from <a href="https://www.svgrepo.com/collection/company-logo/" target="_blank" rel="noopener">SVG Repo</a>.
     </div>
 </footer>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+            await Theme.InitializeAsync();
+    }
+}
