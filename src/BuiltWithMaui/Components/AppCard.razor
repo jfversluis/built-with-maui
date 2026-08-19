@@ -1,0 +1,31 @@
+@namespace BuiltWithMaui.Components
+@using BuiltWithMaui.Models
+
+<button type="button" class="app-card" @onclick="OnOpen">
+    <h3>
+        @App.Name
+        @if (App.Featured)
+        {
+            <span class="featured-star" title="Featured">⭐</span>
+        }
+    </h3>
+    <p class="desc">@App.Description</p>
+    @if (!string.IsNullOrWhiteSpace(App.Author))
+    {
+        <span class="author">👤 @App.Author</span>
+    }
+    <div class="meta">
+        <span class="users">@App.Users</span>
+        <span class="platform-badges">
+            @foreach (var platform in App.Platforms)
+            {
+                <PlatformIcon Platform="@platform" />
+            }
+        </span>
+    </div>
+</button>
+
+@code {
+    [Parameter, EditorRequired] public AppEntry App { get; set; } = default!;
+    [Parameter] public EventCallback OnOpen { get; set; }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "GameSpur",
+  "slug": "gamespur",
+  "description": "the app that allows you to follow the games you love with personalised gaming news feeds and deals.",
+  "users": "70K+ downloads (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.bricefriha.aresgaming&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/gamhub-gaming-news-updates/id1595571591"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PartyFellow",
+  "slug": "partyfellow",
+  "description": "An event-planning app designed to streamline invitations, gift coordination, and RSVPs for events like birthdays, weddings, and more. Built with .NET MAUI and Azure.",
+  "users": "100+ (Google Play & App Store)",
+  "website": "https://partyfellow.com",
+  "links": [
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/app/id6503934962"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=se.arcticfusion.partyfellow"
+    },
+    {
+      "platform": "website",
+      "url": "https://partyfellow.com"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Bicicreteiro",
+  "slug": "bicicreteiro",
+  "description": "Bicicreteiro is a complete platform for cyclists that integrates a social network, marketplace, and safety features. It allows users to share training sessions with live tracking, create product stores, and receive news via newsletter. It uses AI to help identify stolen bikes. Additional features are available through subscriptions and donations integrated with app stores.",
+  "users": "100 + downloads (Google Play & App Store)",
+  "website": "https://bicicreteiro.com",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://bicicreteiro.com"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=app.bicicreteiro"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/bicicreteiro/id6740704307"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

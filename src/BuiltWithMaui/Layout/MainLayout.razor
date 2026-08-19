@@ -1,0 +1,39 @@
+@inherits LayoutComponentBase
+@using BuiltWithMaui.Components
+@using BuiltWithMaui.Services
+@inject ThemeService Theme
+
+<header class="site-header">
+    <div class="container">
+        <a href="" class="brand">
+            🏗️ Built with <span class="dotnet-badge">.NET MAUI</span>
+        </a>
+        <nav class="site-nav">
+            <NavLink href="" Match="NavLinkMatch.All">Apps</NavLink>
+            <NavLink href="resources">Resources</NavLink>
+            <NavLink href="submit">Submit Your App</NavLink>
+            <a href="https://github.com/jfversluis/built-with-maui" target="_blank" rel="noopener">GitHub</a>
+            <ThemeToggle />
+        </nav>
+    </div>
+</header>
+
+<main>
+    @Body
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        Unofficial community showcase — not endorsed by Microsoft.
+        See the <a href="https://dotnet.microsoft.com/platform/customers/maui" target="_blank" rel="noopener">official customer showcases</a>.
+        <br />Platform icons from <a href="https://www.svgrepo.com/collection/company-logo/" target="_blank" rel="noopener">SVG Repo</a>.
+    </div>
+</footer>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+            await Theme.InitializeAsync();
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Take It Easy Torino",
+  "slug": "take-it-easy-torino",
+  "description": "Discover public transport in Torino with ease! Take It Easy Torino helps you track arrivals in real-time, set smart alarms, and plan your trips smoothly. Whether you're a local or a visitor, our app ensures you never miss your ride again.",
+  "users": "100+ (Google Play)",
+  "website": "https://davomelkumyan40.github.io/TakeItEasy.github.io",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://davomelkumyan40.github.io/TakeItEasy.github.io"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.takeiteasy.torino.app&pcampaignid=web_share"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

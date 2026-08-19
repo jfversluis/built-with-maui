@@ -1,0 +1,24 @@
+{
+  "name": "Longines Equestrian App",
+  "slug": "longines-equestrian-app",
+  "description": "The official Longines Equestrian App, the ultimate companion for equestrian enthusiasts and participants of events sponsored by Longines.",
+  "users": "1000+",
+  "website": "https://public.hippodata.net",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://public.hippodata.net"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.longines.equestrian"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/de/app/longines-equestrian-app/id1558577894"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

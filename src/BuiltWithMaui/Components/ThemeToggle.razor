@@ -1,0 +1,18 @@
+@namespace BuiltWithMaui.Components
+@using BuiltWithMaui.Services
+@inject ThemeService Theme
+@implements IDisposable
+
+<button type="button" class="theme-toggle" @onclick="Toggle"
+        title="@(Theme.IsLight ? "Switch to dark mode" : "Switch to light mode")"
+        aria-label="@(Theme.IsLight ? "Switch to dark mode" : "Switch to light mode")">
+    @(Theme.IsLight ? "🌙" : "☀️")
+</button>
+
+@code {
+    protected override void OnInitialized() => Theme.OnChange += StateHasChanged;
+
+    private Task Toggle() => Theme.ToggleAsync();
+
+    public void Dispose() => Theme.OnChange -= StateHasChanged;
+}

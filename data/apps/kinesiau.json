@@ -1,0 +1,20 @@
+{
+  "name": "KinesiaU",
+  "slug": "kinesiau",
+  "description": "The KinesiaU™ motor assessment system is a validated, low-cost prescription medical app for individuals to measure their Parkinson’s disease and essential tremor symptoms using an iPhone or Android smartphone and smartwatch. The system tracks tremors, slowness, and dyskinesia as well as therapies and activities in user-friendly reports. These can help patients and clinicians make better care decisions and identify therapies and activities to improve their symptoms.",
+  "users": "Unknown (HIPAA Compliance)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.GLNT.KinesiaU"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/kinesiau/id1528265341"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

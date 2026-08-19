@@ -1,0 +1,24 @@
+{
+  "name": "Keyboardy",
+  "slug": "keyboardy",
+  "description": "A desktop accessibility tool that allows users to type efficiently with one hand by dynamically reflecting keyboard keys, improving speed, reach, and accuracy.",
+  "users": "+1K",
+  "website": "https://keyboardy.net",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://keyboardy.net"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9p2sbxxxx9w7"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/keyboardy/id6741805732"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

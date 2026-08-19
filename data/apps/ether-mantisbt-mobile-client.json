@@ -1,0 +1,16 @@
+{
+  "name": "ETHER - MantisBT Mobile Client",
+  "slug": "ether-mantisbt-mobile-client",
+  "description": "Mobile Client for MantisBT : Track, Manage, Monitor your bugs/tickets on the go! KEY FEATURES: Ticketboard Dashboard Mode for Quick Summary & Quick Tickets, Organize & Easy Ticket Management via API Token, Refreshed WebMode with Dark/Light Support, and much more.., Its a great productivity tool & a perfect MantisBT client (offered by Thenetspider Digital Solutions)",
+  "users": "20+ downloads (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.thenetspider.ether"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

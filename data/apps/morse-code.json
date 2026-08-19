@@ -1,0 +1,24 @@
+{
+  "name": "Morse Code",
+  "slug": "morse-code",
+  "description": "A free translator and Morse Code learning app.",
+  "users": "1M+ downloads (Google Play)",
+  "website": "https://morsecode.holecekp.eu",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=holecek.pavel.MorseCode"
+    },
+    {
+      "platform": "windows",
+      "url": "https://www.microsoft.com/store/apps/9PNBC68XDHR0"
+    },
+    {
+      "platform": "website",
+      "url": "https://morsecode.holecekp.eu"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

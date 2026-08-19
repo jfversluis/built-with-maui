@@ -1,0 +1,20 @@
+{
+  "name": "TV Show & Movie Tracker -Trakt",
+  "slug": "tv-show-movie-tracker-trakt",
+  "description": "TV Show Tracker let you discover, track and comment your favorite TV shows & movies.",
+  "users": "100K+ (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.jonathanantoine.TVST&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/nl/app/tv-show-tracker-trakt-client/id1228141510?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

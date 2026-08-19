@@ -1,0 +1,20 @@
+{
+  "name": "Berichtenbox",
+  "slug": "berichtenbox",
+  "description": "Personal mailbox in which you receive digital mail from the government of the Netherlands.",
+  "users": "3.6M+ (Google Play)  3M+ (App Store)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=nl.rijksoverheid.mbb.pub&hl=en-US"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/gb/app/digid/id1384987408?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

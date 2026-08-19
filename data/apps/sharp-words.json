@@ -1,0 +1,24 @@
+{
+  "name": "Sharp Words",
+  "slug": "sharp-words",
+  "description": "Sharp Words combines Wordle and crosswords to offer a unique twist.",
+  "users": "10+ (Google Play)",
+  "website": "https://sharpwordswebsite.z13.web.core.windows.net/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://sharpwordswebsite.z13.web.core.windows.net/"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.npt.sharpwords&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/sharp-words/id6448644737?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

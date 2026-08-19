@@ -1,0 +1,20 @@
+{
+  "name": "Podcasts Player and tracker",
+  "slug": "podcasts-player-and-tracker",
+  "description": "Podcast Tracker is the best way to manage your podcast library on phone or tablet!",
+  "users": "1M+ downloads (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.jonathanantoine.Podcasts&hl=en"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/bb/app/podcasts-tracker/id1450382384?l=en-US"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

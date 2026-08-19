@@ -1,0 +1,24 @@
+{
+  "name": "RomCrate",
+  "slug": "romcrate",
+  "description": "The ultimate retro game collection tracker. Organize your physical and digital library, log playthroughs, and connect with other gamers.",
+  "users": "50+ (Google Play & App Store)",
+  "website": "https://romcrate.com",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://romcrate.com"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.agenciacosmos.romcrate"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/br/app/romcrate/id6759972404"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

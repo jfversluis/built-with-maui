@@ -1,0 +1,20 @@
+{
+  "name": "Fish Fathom",
+  "slug": "fish-fathom",
+  "description": "HD Fishing Maps for US Coastal & Great Lakes.  Up your fishing game using HD Bathymetry to find new fishing spots including wrecks, reefs, ledges, and rock piles.",
+  "users": "1k+ downloads (App Store)",
+  "website": "https://www.fishfathom.com",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://www.fishfathom.com"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/fishfathom/id6448895341"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

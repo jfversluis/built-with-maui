@@ -1,0 +1,20 @@
+{
+  "name": "Sueca Portuguesa 2022",
+  "slug": "sueca-portuguesa-2022",
+  "description": "Sueca is a trick tacking card game popular among Portuguese speaking people.",
+  "users": "150K+ (Google Play)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.TiagoInteractive.Sueca"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/sueca-portuguesa-2022/id1638754579"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

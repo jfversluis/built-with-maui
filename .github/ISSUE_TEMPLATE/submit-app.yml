@@ -1,0 +1,97 @@
+name: 🏗️ Submit an App
+description: Add your app built with .NET MAUI to the showcase!
+title: "[App] "
+labels: ["new-app"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome to Built with .NET MAUI! 🏗️
+        Fill out this form and we'll review your app. Once approved, it shows up on the site automatically!
+
+  - type: input
+    id: name
+    attributes:
+      label: App Name
+      placeholder: "e.g., My Awesome App"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does your app do? Who is it for?
+      placeholder: "A few sentences about your app."
+    validations:
+      required: true
+
+  - type: input
+    id: users
+    attributes:
+      label: Estimated Users / Downloads
+      description: A rough idea helps visitors — e.g. "10K+ (Google Play)", "1M+ users".
+      placeholder: "e.g., 10K+ (Google Play)"
+
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+      placeholder: "https://yourapp.com"
+
+  - type: input
+    id: ios_url
+    attributes:
+      label: App Store (iOS / macOS) URL
+      placeholder: "https://apps.apple.com/..."
+
+  - type: input
+    id: android_url
+    attributes:
+      label: Google Play URL
+      placeholder: "https://play.google.com/store/apps/details?id=..."
+
+  - type: input
+    id: windows_url
+    attributes:
+      label: Microsoft Store URL
+      placeholder: "https://apps.microsoft.com/detail/..."
+
+  - type: input
+    id: github_url
+    attributes:
+      label: GitHub Repository URL (if open source)
+      placeholder: "https://github.com/you/your-app"
+
+  - type: input
+    id: author
+    attributes:
+      label: Your Name (optional)
+      description: Shown as the app's author on the site.
+      placeholder: "e.g., Jane Developer"
+
+  - type: input
+    id: author_github
+    attributes:
+      label: Your GitHub Username (optional)
+      description: Links your name to your GitHub profile on the site.
+      placeholder: "e.g., janedev"
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (comma-separated)
+      description: Free-form tags to help people find your app.
+      placeholder: "e.g., productivity, finance, games"
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checklist
+      options:
+        - label: This app is built with .NET MAUI
+          required: true
+        - label: I provided at least one working link (website or store listing)
+          required: true
+        - label: I'm the author, or have permission to list this app
+          required: true

@@ -1,0 +1,24 @@
+{
+  "name": "Nomalys Origin",
+  "slug": "nomalys-origin",
+  "description": "Nomalys Origin is a mobile and desktop app that connects to your company's IT systems (CRM, ERP, BI, etc.) and gives you real-time, intuitive access to customer data, reports, and opportunities, helping teams boost efficiency and responsiveness on the go.",
+  "users": "15K + downloads (Google Play + App Store + MS Store)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.nomalys"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/fr/app/nomalys-origin/id380475770"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9nblggh1zmj8"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}

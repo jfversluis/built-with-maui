@@ -1,0 +1,8 @@
+bin/
+obj/
+publish/
+.vs/
+*.user
+
+# Generated at build time by scripts/merge-data.mjs
+src/BuiltWithMaui/wwwroot/data/apps.json

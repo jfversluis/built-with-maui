@@ -1,0 +1,20 @@
+{
+  "name": "Ritlogger",
+  "slug": "ritlogger",
+  "description": "A free, very simple, and a privacy-friendly trip registration for the Netherlands to easily keep track of the mileage for business and/or private car use.",
+  "users": "1k+ (Apple)",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.mrijntjes.ritlogger"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/nl/app/ritlogger-rittenregistratie/id6479636230"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-14",
+  "featured": false
+}
