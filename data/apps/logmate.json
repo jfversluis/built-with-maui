@@ -1,0 +1,20 @@
+{
+  "name": "LogMate",
+  "slug": "logmate",
+  "description": "LogMate is the innovative digital logbook solution for vehicles and trailers",
+  "users": "Just Released",
+  "website": "https://awchosting.com.au/logmate/",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.AWC.LogMate"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/logmate-service-logbook/id6789377895"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-19",
+  "featured": false
+}
