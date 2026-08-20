@@ -1,0 +1,29 @@
+{
+  "name": "Meissner Nordic",
+  "slug": "meissner-nordic",
+  "description": "Everything You Need for Perfect Ski Days. Built specifically for Meissner Nordic Ski Area, our app keeps you informed and ready to hit the trails.",
+  "users": "",
+  "author": "James Montemagno",
+  "authorGitHub": "jamesmontemagno",
+  "website": "https://meissnernordic.app/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://meissnernordic.app/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/meissner-nordic/id1601048636"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.refractored.meissner"
+    }
+  ],
+  "tags": [
+    "sports",
+    "fitness"
+  ],
+  "dateAdded": "2026-08-20",
+  "featured": false
+}
