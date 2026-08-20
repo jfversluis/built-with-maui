@@ -1,0 +1,28 @@
+{
+  "name": "My Score Keeper",
+  "slug": "my-score-keeper",
+  "description": "Track players, rounds, and totals with a clean scoreboard that works on web and mobile.",
+  "users": "",
+  "author": "James Montemagno",
+  "authorGitHub": "jamesmontemagno",
+  "website": "https://www.myscorekeeper.app/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://www.myscorekeeper.app/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/my-score-keeper-scoreboard/id1191033523"
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/jamesmontemagno/blazor-scorekeeper"
+    }
+  ],
+  "tags": [
+    "games"
+  ],
+  "dateAdded": "2026-08-20",
+  "featured": false
+}
