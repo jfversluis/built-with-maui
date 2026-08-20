@@ -1,0 +1,29 @@
+{
+  "name": "My Cadence",
+  "slug": "my-cadence",
+  "description": "Real-time Cadence Display. Connect your Bluetooth sensor and see your cadence instantly. Simple, fast, and always free.",
+  "users": "10K+ (Google Play)",
+  "author": "James Montemagno",
+  "authorGitHub": "jamesmontemagno",
+  "website": "https://mycadence.app/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://mycadence.app/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/app/my-cadence/id1545730360"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.refractored.mycadence"
+    }
+  ],
+  "tags": [
+    "fitness",
+    "cycling"
+  ],
+  "dateAdded": "2026-08-20",
+  "featured": false
+}
