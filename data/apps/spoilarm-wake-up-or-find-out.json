@@ -1,0 +1,26 @@
+{
+  "name": "Spoilarm: Wake Up or Find Out",
+  "slug": "spoilarm-wake-up-or-find-out",
+  "description": "Spoilarm is an alarm clock that holds your favourite show hostage.\n\nSet an alarm, pick a series, and tell it where you stopped watching. Then hit snooze and find out what that costs.\n\nHOW IT WORKS\n\n1. Set an alarm and choose a show you are in the middle of.\n2. Tell Spoilarm the season and episode you last watched. It only ever looks past that point.\n3. The alarm rings. Getting up now costs nothing.\n4. Snooze, and it says something about what is coming. Snooze again, and it says more.\n\nIT ONLY KNOWS WHAT YOU TOLD IT\n\nSpoilarm never draws from anything you have already seen. You say you finished season 3 and you are two episodes into season 4; everything before that is off the table. When in doubt it treats you as further behind than you said, because the only unforgivable mistake here is spoiling something you had not reached.\n\nYOU DECIDE WHAT IS AT RISK\n\n• Never spoil this one — shield a show and it is never touched, whatever else you set.\n• Someone's next to me — the alarm still wakes you, silently, with no line spoken out loud. A spoiler said out loud reaches everyone in the room, not just the person it was aimed at.\n• Nothing at stake — leave the show empty and it is an ordinary alarm.\n\nNO NAMES, NO PLOT, NO QUOTES\n\nSpoilarm never names a character, an episode or a place, and it never quotes anyone's writing. What it says is deliberately just enough to be unbearable: that something happens, roughly how big it is, and roughly when. The dread does the work. Nothing is copied from anywhere.\n\nBUILT TO BE TRUSTWORTHY\n\n• No account. Nothing to sign up for.\n• No network. The Android build does not even ask for internet access — there is nothing to send and nowhere to send it.\n• No ads. No analytics. No tracking of any kind.\n• Your alarms and what you are watching never leave your device.\n• Free, with no in-app purchases.\n\nEnglish, Türkçe and العربية, with right-to-left layout in Arabic.\n\nSpoilarm is not affiliated with, endorsed by, or connected to any television series, studio or streaming service. Series titles are used only to identify the show you choose.",
+  "users": "1K",
+  "author": "Muhammet Şahin",
+  "authorGitHub": "muhammetsahin",
+  "website": "https://apps.apple.com/app/spoilarm-wake-up-or-find-out/id6800593332",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://apps.apple.com/app/spoilarm-wake-up-or-find-out/id6800593332"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/app/spoilarm-wake-up-or-find-out/id6800593332"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.mebasoft.spoilarm"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-22",
+  "featured": false
+}
