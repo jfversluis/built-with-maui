@@ -6,7 +6,6 @@ on:
   workflow_run:
     workflows: ['Approve App Submission']
     types: [completed]
-    branches: [main]
   workflow_dispatch:
 
 permissions:
