@@ -1,0 +1,26 @@
+{
+  "name": "Brickbeam",
+  "slug": "brickbeam",
+  "description": "Building a brick set and can't find that one piece in the pile? brickbeam helps kids (and grown-ups)\nfind the exact pieces a set still needs — just point the camera.\n\n• Scan a single piece or a whole pile — AI finds and identifies the bricks, then tells you which\n  ones your set still needs (green = needed).\n• Track several builds at once. Pick a set, and brickbeam lists every piece with a live progress bar.\n• Find building instructions for your set.\n• Works offline: download the set catalog once and search without limits.\n• Turkish and English — switches automatically to your phone's language, and you can change it\n  any time from the home screen.\n• Made for ages 7–15: big buttons, clear steps, friendly guidance. No ads, no accounts, no tracking.",
+  "users": "5K",
+  "author": "Muhammet Şahin",
+  "authorGitHub": "muhammetsahin",
+  "website": "https://apps.apple.com/us/app/brickbeam/id6794062762",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://apps.apple.com/us/app/brickbeam/id6794062762"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/brickbeam/id6794062762"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.mebasoft.brickbeam"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-08-22",
+  "featured": false
+}
