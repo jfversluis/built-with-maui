@@ -1,0 +1,29 @@
+{
+  "name": "Vehicle Smart - Car Check",
+  "slug": "vehicle-smart-car-check",
+  "description": "One of the UK's most popular vehicle checking apps providing full UK vehicle history and an intuitive way to manage multiple vehicles with reminders for MOT, tax, insurance and servicing",
+  "users": "800k MAU - 100k 5-star ratings iOS, 51k 4.8-star rations Android",
+  "author": "Rob Wilson",
+  "authorGitHub": "",
+  "website": "https://vehiclesmart.com/vehicle-smart-car-check-app.html",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://vehiclesmart.com/vehicle-smart-car-check-app.html"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/gb/app/vehicle-smart-car-check/id1126552896"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.jvelimited.vehiclesmart"
+    }
+  ],
+  "tags": [
+    "vehicles",
+    "united kingdom"
+  ],
+  "dateAdded": "2026-08-22",
+  "featured": false
+}
