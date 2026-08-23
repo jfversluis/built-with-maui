@@ -1,0 +1,29 @@
+{
+  "name": "Journalist-Live",
+  "slug": "journalist-live",
+  "description": "Journalist-Live is your professional, pocket-sized assistant designed to instantly convert voice recordings into ready-to-publish text content. With just a single tap, turn any press conference, interview, or lecture transcript into a structured article, script, or blog post.",
+  "users": "100+",
+  "author": "Stanislav Iegorov",
+  "authorGitHub": "borninmusic",
+  "website": "https://journalist-live.com/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://journalist-live.com/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/ua/app/journalist-live/id6738628046"
+    }
+  ],
+  "tags": [
+    "audio",
+    "text",
+    "journalist",
+    "recorder",
+    "notes",
+    "ai"
+  ],
+  "dateAdded": "2026-08-23",
+  "featured": false
+}
