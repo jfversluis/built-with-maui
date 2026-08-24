@@ -1,0 +1,28 @@
+{
+  "name": "Vandens keliai - Wave",
+  "slug": "vandens-keliai-wave",
+  "description": "The program is designed to navigate the inland waterways of Lithuania. Displays coordinates, speed, course of movement. Shows waterways with all signs. When connected to the Internet, the water depth is displayed in real time. There are topographic and orthographic maps.",
+  "users": "5K+ (Google Play) / x (iOS)",
+  "author": "Gintautas Kmieliauskas",
+  "authorGitHub": "gkmiel-hb",
+  "website": "https://vvkd.lt/mobilioji-programele-wave/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://vvkd.lt/mobilioji-programele-wave/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/lt/app/vandens-keliai-wave/id6449252735"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.hnitbaltic.waterways"
+    }
+  ],
+  "tags": [
+    "navigation"
+  ],
+  "dateAdded": "2026-08-24",
+  "featured": false
+}
