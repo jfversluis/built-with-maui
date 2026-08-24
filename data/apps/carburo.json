@@ -1,0 +1,33 @@
+{
+  "name": "Carburo",
+  "slug": "carburo",
+  "description": "**Carburo** is a .NET MAUI app for iOS and Android that helps drivers find cheaper fuel stations and EV charging points across several European countries.\n\nIt features interactive maps, location-based search, price comparison, favorites and alerts, with dedicated **Apple CarPlay and Android Auto** experiences.\n\nThe app uses a custom MAUI UI with SkiaSharp and connects to an ASP.NET Core backend with PostgreSQL/PostGIS.",
+  "users": "1K +",
+  "author": "Infoscape Software",
+  "authorGitHub": "",
+  "website": "https://www.infoscape.fr/carburo",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://www.infoscape.fr/carburo"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/fr/app/carburo/id6760407366"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.infoscape.carburo.appli"
+    }
+  ],
+  "tags": [
+    "maps",
+    "navigation",
+    "carplay",
+    "android auto",
+    "ev",
+    "location"
+  ],
+  "dateAdded": "2026-08-24",
+  "featured": false
+}
