@@ -1,0 +1,21 @@
+{
+  "name": "gReader",
+  "slug": "greader",
+  "description": "gReader is a git based mobile repository reader app built using .net 11 preview 6.",
+  "users": "0",
+  "author": "Declan Tugwell",
+  "authorGitHub": "DeclanTugwell",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.dtdevltd.greader"
+    }
+  ],
+  "tags": [
+    ".net 11",
+    "productivity"
+  ],
+  "dateAdded": "2026-08-27",
+  "featured": false
+}
