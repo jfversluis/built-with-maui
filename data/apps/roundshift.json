@@ -1,0 +1,29 @@
+{
+  "name": "Roundshift",
+  "slug": "roundshift",
+  "description": "RoundShift is the interval timer for people who actually train. Build any workout — Tabata, EMOM, circuits with warm-ups, rest and recovery — then run it with a screen you can read from across the gym and a voice that calls every change.",
+  "users": "100",
+  "author": "Carl Law",
+  "authorGitHub": "",
+  "website": "https://roundshift.carllaw.co.uk",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://roundshift.carllaw.co.uk"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/gb/app/roundshift-interval-timer/id6793125180"
+    }
+  ],
+  "tags": [
+    "timer",
+    "hiit",
+    "tabatta",
+    "pomodoro",
+    "focus",
+    "fitness"
+  ],
+  "dateAdded": "2026-08-30",
+  "featured": false
+}
