@@ -1,0 +1,33 @@
+{
+  "name": "FinaShare",
+  "slug": "finashare",
+  "description": "Split expenses with friends - fast, simple, and fair.\n\nFinaShare makes it easy to manage shared expenses with friends, roommates, travel companions, or groups - on a trip, eating out, or splitting everyday costs.\n\n- Scan receipts using OCR & AI and effortlessly split even large, complex bills with many items between multiple people\n- Split expenses in different ways: equally, by quantity, percentage, or individual items\n- Manage expenses in multiple currencies\n- Keep everything organized with customizable groups and user profiles\n\nBuilt for speed and smooth performance, with full NativeAOT compilation and extensive customization options.",
+  "users": "1k",
+  "author": "Mariusz Baranski",
+  "authorGitHub": "Marioo1357",
+  "website": "https://finashare.net/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://finashare.net/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/pl/app/split-expenses-with-finashare/id6612032156"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.fin.app"
+    }
+  ],
+  "tags": [
+    "expenses",
+    "split",
+    "finance",
+    "cost",
+    "money",
+    "friends"
+  ],
+  "dateAdded": "2026-08-31",
+  "featured": false
+}
