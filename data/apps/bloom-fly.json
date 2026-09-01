@@ -1,0 +1,30 @@
+{
+  "name": "Bloom & Fly",
+  "slug": "bloom-fly",
+  "description": "It’s a wellness app built with .NET MAUI and available on iOS and Android. It combines guided breathing, mudras, positive affirmations, quick rituals, and relaxing sounds to help people reduce stress, feel calmer, and restore their energy.",
+  "users": "",
+  "author": "",
+  "authorGitHub": "Kapusch",
+  "website": "https://bloomandflyapp.com/en/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://bloomandflyapp.com/en/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/bloom-fly/id6759394532"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.bloomyapps.bloomandfly"
+    }
+  ],
+  "tags": [
+    "mindfulness",
+    "yoga",
+    "health"
+  ],
+  "dateAdded": "2026-09-01",
+  "featured": false
+}
