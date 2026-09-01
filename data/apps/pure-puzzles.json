@@ -1,0 +1,21 @@
+{
+  "name": "Pure Puzzles",
+  "slug": "pure-puzzles",
+  "description": "A collection of 20+ logic puzzles built with MAUI and AI.",
+  "users": "1+",
+  "author": "Jasper",
+  "authorGitHub": "",
+  "website": "",
+  "links": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.psychosoft.pure_puzzles"
+    }
+  ],
+  "tags": [
+    "puzzle",
+    "logic"
+  ],
+  "dateAdded": "2026-09-01",
+  "featured": false
+}
