@@ -2,7 +2,7 @@
   "name": "AthosZone",
   "slug": "athoszone",
   "description": "AthosApp is a comprehensive companion application designed for navigating and exploring the Mount Athos region. Built entirely with .NET MAUI, it provides an all-in-one toolkit for visitors, featuring interactive map navigation (powered by Mapsui), real-time weather integration, and up-to-date ferry and bus schedules. The app utilizes SignalR and Firebase notifications for a live presence declaration system, keeping users connected and informed throughout their journey.",
-  "users": "2K Downloands",
+  "users": "2K+ downloads (Google Play & App Store)",
   "author": "Kiriakos Mourouzidis",
   "authorGitHub": "Kiriakos41",
   "website": "",
