@@ -1,0 +1,30 @@
+{
+  "name": "Remotime: Freelancer Invoicing",
+  "slug": "remotime-freelancer-invoicing",
+  "description": "A simple app for solo freelancers to manage their tasks and time tracking, which allows simple invoice generation at the end of your billing period.",
+  "users": "100+",
+  "author": "Malcolm Jack",
+  "authorGitHub": "inquisitorjax",
+  "website": "https://remotime.net/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://remotime.net/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/remotime-freelancer-invoicing/id1488388503"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.wibcilabs.remotime"
+    }
+  ],
+  "tags": [
+    "finance",
+    "freelancing",
+    "invoicing"
+  ],
+  "dateAdded": "2026-09-07",
+  "featured": false
+}
