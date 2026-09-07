@@ -1,0 +1,28 @@
+{
+  "name": "4 Day Week Jobs",
+  "slug": "4-day-week-jobs",
+  "description": "A job search app for companies advertising 4-day a week jobs. Join the workforce revolution!",
+  "users": "1K+",
+  "author": "Malcolm Jack",
+  "authorGitHub": "InquisitorJax",
+  "website": "https://4dayweek.io/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://4dayweek.io/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/4-day-week-jobs/id6445800811"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.wibcilabs.fourdaywork"
+    }
+  ],
+  "tags": [
+    "jobs. remotework"
+  ],
+  "dateAdded": "2026-09-07",
+  "featured": false
+}
