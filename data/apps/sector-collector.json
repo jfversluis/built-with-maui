@@ -1,0 +1,33 @@
+{
+  "name": "Sector Collector",
+  "slug": "sector-collector",
+  "description": "Sector Collector is a GPS-based location game that turns walks and bike rides into a map-based exploration challenge. The world is divided into 100 × 100 meter sectors. Enter a sector while tracking conditions are valid to add it to your collection, earn points, and expand your explored area.",
+  "users": "Currently around 100 users",
+  "author": "",
+  "authorGitHub": "",
+  "website": "https://sectorcollectorapi-exe5fqhphmhwbjca.canadacentral-01.azurewebsites.net/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://sectorcollectorapi-exe5fqhphmhwbjca.canadacentral-01.azurewebsites.net/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/gb/app/sector-collector/id6797159966"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.bsd.sectorcollector&hl=en"
+    }
+  ],
+  "tags": [
+    "gps",
+    "location",
+    "adventure",
+    "game",
+    "map",
+    "walking"
+  ],
+  "dateAdded": "2026-09-07",
+  "featured": false
+}
