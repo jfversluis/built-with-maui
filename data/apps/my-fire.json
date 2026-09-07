@@ -1,0 +1,32 @@
+{
+  "name": "My Fire #",
+  "slug": "my-fire",
+  "description": "Plan your path to financial independence with private, offline calculators for FIRE, investing, debt payoff, healthcare, taxes, and retirement cash flow — plus account tracking and monthly net-worth check-ins.",
+  "users": "",
+  "author": "James Montemagno",
+  "authorGitHub": "jamesmontemagno",
+  "website": "http://myfirenumber.com/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "http://myfirenumber.com/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/my-fire-number/id6799772608"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.refractored.myfirenumber"
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/jamesmontemagno/app-fire-calculator"
+    }
+  ],
+  "tags": [
+    "finance"
+  ],
+  "dateAdded": "2026-09-07",
+  "featured": false
+}
