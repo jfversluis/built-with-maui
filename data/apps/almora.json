@@ -1,0 +1,26 @@
+{
+  "name": "Almora",
+  "slug": "almora",
+  "description": "Almora is an alarm clock with one twist: every time you hit snooze, you pledge a small donation to a charity you chose yourself.\n\nNine more minutes suddenly costs something. Most people find they get up.\n\nHOW IT WORKS\n\n1. Set an alarm and choose what a snooze is worth — €0.50, or whatever feels like enough to matter.\n2. Pick a charity. Almora searches a directory of verified nonprofits, so you are giving to a real, registered organisation.\n3. Snooze if you must. Almora quietly adds it up.\n4. Send the donations when you are ready, in one payment, from the account screen.\n\n100% OF YOUR DONATION REACHES THE CHARITY\n\nAlmora takes no cut — not a percentage, not a \"platform fee\". You pay on our donation partner's own secure page, and the full amount goes to the charity. Almora is funded by an optional subscription instead, which is the only honest way to promise you the whole donation.\n\nA CEILING YOU SET\n\nNobody should wake up to a surprise. You set a monthly limit, and once you reach it Almora stops charging you — snoozes past the limit are recorded but never billed.\n\nHARDER TO FOOL\n\nA button is easy to press half-asleep. Wake proofs are not: solve a few maths problems, photograph something outside the bedroom, or walk a set number of steps.\n\nALMORA PRO\n\nFree includes one alarm. Almora Pro adds as many alarms as you need, plus every wake proof.\n\nAlmora Pro is an auto-renewing subscription, billed monthly at the price shown in the app. Payment is charged to your Apple Account at confirmation of purchase. It renews automatically unless cancelled at least 24 hours before the end of the current period; your account is charged for renewal within 24 hours before the period ends. Manage or cancel it any time in your Apple Account settings.\n\nTerms of use: https://mebasoft.com/almora/terms\nPrivacy policy: https://mebasoft.com/almora/privacy\n\nDonating is free and always will be — Pro changes nothing about where your money goes.\n\nBUILT TO BE TRUSTWORTHY\n\n• No ads. No analytics SDKs. No tracking of any kind.\n• Your wake-proof photo never leaves your iPhone.\n• Your step count never leaves your iPhone.\n• Your card details never reach us; we never hold your money at any point.\n• Every donation gives you a receipt reference you can check.\n\n\nAlmora is not affiliated with the charities it lists. Whether a donation is tax-deductible depends on your country and the charity; Almora makes no claim either way.",
+  "users": "1K",
+  "author": "Muhammet Şahin",
+  "authorGitHub": "muhammetsahin",
+  "website": "https://play.google.com/store/apps/details?id=com.mebasoft.almora",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://play.google.com/store/apps/details?id=com.mebasoft.almora"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/almora-snooze-give-back/id6795276577"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.mebasoft.almora"
+    }
+  ],
+  "tags": [],
+  "dateAdded": "2026-09-08",
+  "featured": false
+}
