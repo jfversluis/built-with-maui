@@ -1,0 +1,31 @@
+{
+  "name": "OlyBet Sports Bar",
+  "slug": "olybet-sports-bar",
+  "description": "The essential app for sports enthusiasts and food lovers across the Baltics. Whether you're in Latvia, Estonia, or Lithuania, OlyBet Sports Bar enhances your sports bar experience with exclusive features and benefits.",
+  "users": "10K+ (Google Play), 5K (AppStore)",
+  "author": "Nikita Gerassimov",
+  "authorGitHub": "NGeras",
+  "website": "https://olybetsportsbar.com/",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://olybetsportsbar.com/"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/olybet-sports-bar/id6504289369"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.olybetsportsbar.olybetsportsbar"
+    }
+  ],
+  "tags": [
+    "food&drink",
+    "entertainment",
+    "bar",
+    "sports"
+  ],
+  "dateAdded": "2026-09-08",
+  "featured": false
+}
