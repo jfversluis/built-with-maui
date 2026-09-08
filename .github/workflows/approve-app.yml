@@ -8,12 +8,18 @@ permissions:
   contents: write
   issues: write
 
+concurrency:
+  group: approve-app-main
+  cancel-in-progress: false
+
 jobs:
   approve:
     if: github.event.label.name == 'approved' && github.event.issue.state == 'open'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main
 
       - name: Create app data file
         uses: actions/github-script@v8
@@ -28,13 +34,14 @@ jobs:
             const repo = context.repo.repo;
             const issue = context.payload.issue;
             const issueNum = issue.number;
+            const headers = { 'X-GitHub-Api-Version': '2026-03-10' };
 
             async function ensureLabel(name, color, description) {
               try {
-                await github.rest.issues.getLabel({ owner, repo, name });
+                await github.rest.issues.getLabel({ owner, repo, name, headers });
               } catch (err) {
                 if (err.status === 404) {
-                  await github.rest.issues.createLabel({ owner, repo, name, color, description });
+                  await github.rest.issues.createLabel({ owner, repo, name, color, description, headers });
                 } else throw err;
               }
             }
@@ -44,10 +51,13 @@ jobs:
             const fields = parseAppSubmission(issue.body || '');
 
             const fail = async (reason) => {
-              await github.rest.issues.addLabels({ owner, repo, issue_number: issueNum, labels: ['import-failed'] });
+              await github.rest.issues.addLabels({
+                owner, repo, issue_number: issueNum, labels: ['import-failed'], headers,
+              });
               await github.rest.issues.createComment({
                 owner, repo, issue_number: issueNum,
                 body: `⚠️ Import failed: ${reason}\n\nFix the issue body and re-apply the \`approved\` label to try again.`,
+                headers,
               });
               core.setFailed(reason);
             };
@@ -120,10 +130,33 @@ jobs:
             execFileSync('git', ['config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com']);
             execFileSync('git', ['add', filePath]);
             execFileSync('git', ['commit', '-m', `Add app: ${entry.name} (closes #${issueNum})`]);
-            execFileSync('git', ['push']);
+
+            let pushed = false;
+            for (let attempt = 1; attempt <= 3 && !pushed; attempt++) {
+              try {
+                execFileSync('git', ['push'], { stdio: 'inherit' });
+                pushed = true;
+              } catch (err) {
+                if (attempt === 3) throw err;
+                core.warning(`Push attempt ${attempt} failed; rebasing onto the latest main and retrying.`);
+                execFileSync('git', ['fetch', 'origin', 'main'], { stdio: 'inherit' });
+                execFileSync('git', ['rebase', 'origin/main'], { stdio: 'inherit' });
+              }
+            }
 
             await github.rest.issues.createComment({
               owner, repo, issue_number: issueNum,
               body: `🎉 **${entry.name}** has been added to the showcase! It will appear on the site once the deployment finishes. Thanks for building with .NET MAUI! 🏗️`,
+              headers,
             });
-            await github.rest.issues.update({ owner, repo, issue_number: issueNum, state: 'closed' });
+
+            // The commit message normally closes the issue once it reaches main.
+            const { data: currentIssue } = await github.rest.issues.get({
+              owner, repo, issue_number: issueNum, headers,
+            });
+            if (currentIssue.state === 'open') {
+              await github.rest.issues.update({
+                owner, repo, issue_number: issueNum, state: 'closed', state_reason: 'completed',
+                headers,
+              });
+            }
