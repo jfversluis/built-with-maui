@@ -1,0 +1,27 @@
+{
+  "name": "EpicMail",
+  "slug": "epicmail",
+  "description": "A unified inbox for Gmail, Outlook, Yahoo, iCloud, IMAP, and POP3.\n\nEpicMail is available as a native Android app built with .NET MAUI and as a companion browser app. It helps people with multiple email accounts read, search and reply from one inbox. Web setup and a valid card are required before adding email accounts. The Adventurer plan remains $0 unless the user upgrades.\n\nAll your inboxes. Finally together.",
+  "users": "",
+  "author": "Serge Sagan",
+  "authorGitHub": "Sergey-PrudentDev",
+  "website": "https://epicmail.org/?utm_source=built_with_maui&utm_medium=referral&utm_campaign=epicmail_android_2026&utm_content=app_showcase",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://epicmail.org/?utm_source=built_with_maui&utm_medium=referral&utm_campaign=epicmail_android_2026&utm_content=app_showcase"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=prudentdev.epicmail.app"
+    }
+  ],
+  "tags": [
+    "email",
+    "productivity",
+    "unified-inbox",
+    "android"
+  ],
+  "dateAdded": "2026-10-04",
+  "featured": false
+}
