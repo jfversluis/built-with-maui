@@ -1,0 +1,29 @@
+{
+  "name": "Hide & Pic – Treasure Hunt",
+  "slug": "hide-pic-treasure-hunt",
+  "description": "Hide & Pic is a **real-world treasure hunt game for kids** 🪎. One player hides clue cards around the house and snaps a photo 📸 of each spot. The kids find each card, answer a trivia question and unlock the photo of the next spot, all the way to the treasure 🎁.\n\n**Why we built it:** most kids' games keep them glued to a screen. We wanted the opposite: the phone just holds the questions and the photos, and the actual play happens **off the screen** 🏃, running around the house, the backyard, a park or a campsite. Every hunt is pre-built around one topic, mostly educational ones like culture, geography, chemistry, history or math, with a fun fact after most questions, so kids **learn something along the way** 🧠 without it feeling like homework.\n\n**Who it's best for:** parents looking for a birthday party game 🎂, a rainy-day activity or something to do at a cabin in the woods or at camp 🏕️, plus homeschoolers, kids' clubs and party planners. Setup takes about 5 minutes.",
+  "users": "",
+  "author": "Cross Subject LLC",
+  "authorGitHub": "YMichurin",
+  "website": "https://crosssubject.com",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://crosssubject.com"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.crosssubject.hideandpic"
+    }
+  ],
+  "tags": [
+    "games",
+    "education",
+    "family",
+    "kids",
+    "treasure hunt",
+    "scavenger hunt"
+  ],
+  "dateAdded": "2026-10-10",
+  "featured": false
+}
