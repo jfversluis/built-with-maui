@@ -12,6 +12,10 @@
     {
       "platform": "ios",
       "url": "https://apps.apple.com/us/app/logmate-service-logbook/id6789377895"
+    },
+    {
+      "platform": "windows",
+      "url":"https://apps.microsoft.com/detail/9PG94RCN9Q9B"
     }
   ],
   "tags": [],
