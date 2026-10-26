@@ -1,0 +1,27 @@
+{
+  "name": "Talavine Code",
+  "slug": "talavine-code",
+  "description": "Talavine Code is an open-source Windows desktop coding preview built with .NET MAUI and Blazor. It runs supported coding CLIs or API providers and lets developers compare designs from multiple configured models. I'm the maker; this submission covers the Windows app.",
+  "users": "",
+  "author": "Scott Crossen",
+  "authorGitHub": "scrossen",
+  "website": "https://talavine.com/talavine-code",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://talavine.com/talavine-code"
+    },
+    {
+      "platform": "github",
+      "url": "https://github.com/scrossen/talavine-code"
+    }
+  ],
+  "tags": [
+    "windows",
+    "developer-tools",
+    "ai",
+    "open-source"
+  ],
+  "dateAdded": "2026-10-26",
+  "featured": false
+}
