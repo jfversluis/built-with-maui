@@ -1,0 +1,29 @@
+{
+  "name": "Restaurant Staff Scheduler (Schedules Made Simple)",
+  "slug": "restaurant-staff-scheduler-schedules-made-simple",
+  "description": "Staff management for independent restaurants and food service businesses. Managers build and publish the weekly schedule with live labor cost, and crew members see their shifts, request time off and pick up open shifts. Features a patent-pending visual scheduler that works on a phone screen, a drag-and-drop board on tablets and foldables, Siri shortcuts and widgets on iOS, and full English and Spanish support. Built by a small team with .NET MAUI in .NET 10, from one C# codebase for iPhone, iPad, Android phones and tablets.\n\n<img width=\"800\" alt=\"Schedules Made Simple on iPhone, iPad and Android\" src=\"https://github.com/user-attachments/assets/2ab8a482-6236-4824-8d60-b45ef93c1667\" />",
+  "users": "200+ restaurants",
+  "author": "William Davidheiser",
+  "authorGitHub": "",
+  "website": "https://schedulesmadesimple.com",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://schedulesmadesimple.com"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/restaurant-scheduler/id1573733248"
+    }
+  ],
+  "tags": [
+    "restaurant",
+    "scheduling",
+    "staff management",
+    "workforce",
+    "small business",
+    "food service"
+  ],
+  "dateAdded": "2026-11-07",
+  "featured": false
+}
