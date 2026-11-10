@@ -1,0 +1,24 @@
+{
+  "name": "Nexile",
+  "slug": "nexile",
+  "description": "Nexile turns your phone or tablet into a smart document inbox. Point the camera at any letter, invoice, contract or notice, and Nexile scans, reads and understands it — extracting sender and recipient addresses, identifying the topic, highlighting key points, creating todos and adding appointments to your calendar. Powered by on-device or cloud AI and fully offline-capable.",
+  "users": "",
+  "author": "Agredo Application",
+  "authorGitHub": "Agredo",
+  "website": "",
+  "links": [
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9mzznl9mkpqv"
+    }
+  ],
+  "tags": [
+    "ai",
+    "scanner",
+    "ocr",
+    "documents",
+    "productivity"
+  ],
+  "dateAdded": "2026-11-10",
+  "featured": false
+}
