@@ -1,0 +1,28 @@
+{
+  "name": "Penban",
+  "slug": "penban",
+  "description": "Penban is the kanban board for everyone who prefers to think with a pen. Instead of typing tasks into forms, write and sketch directly on your cards with a stylus — like sticky notes, only neatly sorted. Shape recognition, lasso selection, a text mode, full-text search (typed and handwritten), local storage and .penban export/import. Free on the Microsoft Store and App Store with an optional one-time Pro unlock.",
+  "users": "",
+  "author": "Agredo Application",
+  "authorGitHub": "Agredo",
+  "website": "",
+  "links": [
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/de/app/penban/id6820294533"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9n4pwcv32kmx"
+    }
+  ],
+  "tags": [
+    "productivity",
+    "kanban",
+    "handwriting",
+    "notes",
+    "stylus"
+  ],
+  "dateAdded": "2026-11-12",
+  "featured": false
+}
