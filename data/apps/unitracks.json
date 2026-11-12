@@ -1,0 +1,25 @@
+{
+  "name": "UniTracks",
+  "slug": "unitracks",
+  "description": "Cross-platform sport tracking app built with .NET MAUI, focused on data security and privacy — all data stays on your device, with no cloud and no tracking. Record GPS trips with live speed, altitude and accuracy, choose from 85+ trip types, and watch your route color by pace. Gamification with levels, XP, streaks and badges, plus a cozy isometric city builder you build with earned coins.",
+  "users": "",
+  "author": "Agredo Application",
+  "authorGitHub": "Agredo",
+  "website": "",
+  "links": [
+    {
+      "platform": "github",
+      "url": "https://github.com/Agredo/UniTracks"
+    }
+  ],
+  "tags": [
+    "fitness",
+    "sports",
+    "gps",
+    "privacy",
+    "games",
+    "tracking"
+  ],
+  "dateAdded": "2026-11-12",
+  "featured": false
+}
