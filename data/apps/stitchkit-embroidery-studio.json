@@ -1,0 +1,37 @@
+{
+  "name": "StitchKit Embroidery Studio",
+  "slug": "stitchkit-embroidery-studio",
+  "description": "StitchKit is an embroidery digitizing app for hobbyists and small embroidery businesses. It opens, edits and saves machine embroidery files (DST, PES, JEF, VP3, EXP and more), turns artwork and photos into stitches (auto-digitizing and Photo Stitch), and makes lettering and monograms.\n\nIt is one .NET 10 MAUI codebase with a Blazor Hybrid UI and SkiaSharp rendering (real-time stitch preview, 3D preview and a density heatmap), running natively on iPhone, iPad, Mac, Windows and Android in 33 languages. There is a free plan.",
+  "users": "",
+  "author": "MavenWright",
+  "authorGitHub": "",
+  "website": "https://mavenwright.com/en/stitchkit",
+  "links": [
+    {
+      "platform": "website",
+      "url": "https://mavenwright.com/en/stitchkit"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/app/stitchkit-embroidery-studio/id6770037428"
+    },
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.mavenwright.stitchkit"
+    },
+    {
+      "platform": "windows",
+      "url": "https://apps.microsoft.com/detail/9mtprl3rkct6"
+    }
+  ],
+  "tags": [
+    "embroidery",
+    "design",
+    "creativity",
+    "cross-platform",
+    "blazor hybrid",
+    "skiasharp"
+  ],
+  "dateAdded": "2026-11-16",
+  "featured": false
+}
